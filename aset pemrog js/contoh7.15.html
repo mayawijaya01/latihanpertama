@@ -1,0 +1,38 @@
+<html>
+  <head><title>Objek Object</title>
+    <script type="text/javascript">
+      function Buku(judul, pengarang){
+        this.judul =judul;
+        this.pengarang=pengarang;
+      }
+    </script>
+  </head>
+  <body bgColor="#EOFFFF">
+    <big>
+    <script>
+      Buku.prototype.penerbit="Penerbit Hebat";
+      Object.prototype.kategori="Fiksi";
+      var riwayat = new Buku("Datuk Maringgi","Merari Siregar");
+      document.write("Nilai dari properti kategori dari Object adalah "+
+        Object.prototype.kategori +"<br />");
+      if(riwayat.constructor == Buku){
+        document.write("riawayat adalah sebuah objek Buku<br />");
+        document.write("Properti constructor dari Buku didefinisikan sebagai: "+
+          riwayat.constructor + "<br />");
+      }
+      if(riwayat.hasOwnProperty("pengarang")){
+        document.write("Objek memiliki properti pengarang.<br />");
+      }
+      if(Buku.prototype.isPrototypeOf(riwayat)){
+        document.write("Buku adalah prototype dari objek riwayat.<br />");
+      }
+      if(riwayat instanceof Buku){
+        document.write("riwayat adalah sebuah instans dari Buku.<br />");
+      }
+      if(riwayat instanceof Object){
+        document.write("riwayat adalah sebuah instans dari Object.<br />");
+      }
+    </script>
+    </big>
+  </body>
+</html>

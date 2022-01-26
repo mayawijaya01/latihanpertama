@@ -1,0 +1,43 @@
+<html>
+  <head><title>Penanganan Event</title>
+    <script type="text/javascript">
+      var coba=0;
+      function randomisasi(){
+        // Angka acak ditetapkan ketika dokumen dimuat
+        var skrg=new Date();
+        angka=(skrg.getSeconds())%10;
+        //Sisa modulus diinkremen
+        angka++;
+      }
+      function tebak(form){
+        // fungsi dipangil setiap kali pengguna mengklik tombol
+        if (form.tbidang.value == angka){
+          alert("Benar!!");
+          form.tbidang.focus();
+          n=0;
+          randomisasi();
+        }
+        else{
+          coba++;
+          alert(coba + " Salah. Tebak lagin.");
+          form.tbidang.value=""; // Menghapus kotak-teks
+          form.tbidang.focus(); // Menempatkan kursor pada kotak-teks
+        }
+      }
+    </script>
+  </head>
+  <body bgcolor="lightgreen"
+        onLoad="randomisasi()"> <!--memanggil fungsi ketika halaman dimuat-->
+    <center>
+    <b>Pilih sebuah angka antara 1 dan 0</b>
+    <form name="formku">
+      <input type="textbox" size=4
+             name="tbidang" />
+      <p>
+      <input type="button"
+             name="tombol1"
+             value="Periksa tebakanku"
+             onClick="tebak(this.form)" /> </p>
+    </form>
+  </body>
+</html>

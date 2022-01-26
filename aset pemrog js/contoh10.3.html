@@ -1,0 +1,51 @@
+<html>
+  <head><title>An HTML Form</title></head>
+  <body>
+    <big>
+    <form name="form1" id="form1"
+          action="http://localhost/uji_form.php"
+          method="GET">
+      <p><fieldset><legend>Semua Tentang Anda</legend></p>
+      Ketikkan nama Anda:
+      <input type="text" name="nama_anda" size="50" />
+      <p>
+      Ceritakan diri Anda di sini:<br />
+      <textarea name="komentar" id="komentar"
+                align="left" rows="5" cols="50">Saya dilahirkan di...
+      </textarea>
+      </p>
+      <p>Pilih Makanan Favorit Anda:
+      <strong>
+        <input type="radio" name="pilihan" id="pilihan1"
+               value="pecel"/>Pecel
+        <input type="radio" name="pilihan" id="pilihan2"
+               value="ikan"/>Ikan
+        <input type="radio" name="pilihan" id="pilihan3"
+               value="daging"/>Daging
+        <input type="radio" name="pilihan" id="choice4"
+               value="nasi"/>Nasi Goreng
+      </p>
+      <p>Pilih Tempat Kerja Anda:<br />
+        <input type="checkbox" name="tempat" id="tempat1"
+               value="JKT"/>Jakarta<br />
+        <input type="checkbox" name="tempat" id="tempat2"
+               value="MDN"/>Medan<br />
+        <input type="checkbox" name="tempat" id="tempat3"
+               value="BDG" checked />Bandung
+      </p>
+      <p><b>Pilih Tempat Liburan Anda:</b><br />
+        <select multiple name="lokasi" id="lokasi">
+          <option selected value="toba"> Danau Toba </option>
+          <option value="bali">Bali </option>
+          <option value="senggigi">Senggigi </option>
+          <option value="raja">Raja Ampat </option>
+        </select>
+      </p>
+      <p></fieldset></p>
+      <input type="submit" value="Submit"/>
+      <input type="reset" value="Clear"/>
+      </strong>
+    </form>
+    </big>
+  </body>
+</html>

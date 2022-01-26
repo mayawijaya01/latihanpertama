@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form html</title>
+    <link rel="stylesheet" type="text/css" href="elemenform3.css"/>
+</head>
+<body>
+<form method="post" action="prosform.php">
+    <p>
+        <label for="namaLengkap">Nama:</label>
+        <input type="text" name="namaLengkap" id="namaLengkap"/>
+    </p>
+
+    <p>
+        <label for="jenisKelamin">Jenis Kelamin:</label>
+        <input type="radio" name="jeniskelamin"
+            id="pria" value="pria" checked="checked"/>Pria
+        <input type="radio" name="jeniskelamin"
+            id="wanita" value="wanita" checked="checked"/>Wanita
+    </p>
+
+    <p>
+        <label for="warna"> Warna Favorit:</label>
+        <select name="warna" id="warna">
+            <option value="merah">merah</option>
+            <option value="hitam">hitam</option>
+            <option value="putih">putih</option>
+            <option value="biru">biru</option>
+            <option value="hijau">hijau</option>
+            <option value="biru">niru</option>
+            <option value="lain">warna lain</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="cekminibus">jenis mobil</label>
+        <input type="checkbox" name="cekminibus" id="minibus"/>minibus/MPV
+        <input type="checkbox" name="cekSedan" id="sedan"/>sedan
+        <input type="checkbox" name="cekJeep" id="jeep"/>Jeep
+        <input type="checkbox" name="cekpickup" id="pickup"/>pickup
+    </p>
+
+    <p>
+        <label for="pedoman">pedoman beli mobil:</label>
+        <textarea name="pedoman" id="pedoman" cols="40" rows="6"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" name="tombolkirim" id="tombolkirim" value="kirim"/>
+    </p>
+</form>
+</body>
+</html>

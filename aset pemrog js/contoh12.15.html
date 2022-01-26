@@ -1,0 +1,30 @@
+<html>
+  <head><title>Menggunakan Event Handler onFocus</title>
+    <script type="text/javascript">
+      function handler(pesan){
+        window.status = pesan; // Amati status bar
+      }
+    </script>
+  </head>
+  <body bgcolor="magenta"><b>Event handler
+    <i>(Ketika Anda mengklik salah satu kotak ini, fokus akan
+       beralih ke status bar)</i>
+    <form name="form1">
+      <p>Ketikkan nama Anda:
+      <input type="text"
+             name="namastring"
+             size="50"
+             onFocus="handler('Jangan lupa mengisi nama Anda')">
+      <br />Ceritakan tentang diri Anda di sini:<br />
+      <textarea name="komentar"
+                align="left"
+                onFocus="handler('Ingin tinggalkan komentar?')"
+                rows="5" cols="50">Saya dilahirkan di...
+      </textarea><p>
+      <input type="button"
+             value="submit">
+      <input type="reset"
+             value="clear">
+    </form>
+  </body>
+</html>

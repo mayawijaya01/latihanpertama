@@ -1,0 +1,50 @@
+<html>
+  <head><title>Mewarnai Teks</title>
+    <style type="text/css">
+      body { background-color: yellow;
+             font-size: 22pt;
+             font-weight: bold;
+      }
+      .merah { color:rgb(255,0,0); /* Defining classes */
+             font-style: verdana;
+             font-size: 32;
+      }
+      .biru { color:blue;
+              font-style: verdana;
+              font-size: 36;
+      }
+      .hijau { color: green;
+               font-style: verdana;
+               font-size: 40;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload=init;
+      function init(){
+        div1=document.getElementById("pertama");
+        div2=document.getElementById("kedua");
+        div3=document.getElementById("ketiga");
+      }
+      function warnaiTeks(){
+        div1.style.left = 50;
+        div1.style.top = 50;
+        div1.className="merah";
+        div2.style.left = 100;
+        div2.style.top = 100;
+        div2.className="biru";
+        div3.style.left = 150;
+        div3.style.top = 150;
+        div3.className="hijau";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="pertama" style="position:absolute; top:50px">satu</div>
+    <div id="kedua" style="position:absolute; top:100px">dua</div>
+    <div id="ketiga" style="position:absolute; top:150px">tiga</div>
+    <form>
+      <input type="button" value="pindah dan warnai teks"
+             onClick="warnaiTeks()">
+    </form>
+  </body>
+</html>

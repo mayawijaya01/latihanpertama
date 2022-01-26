@@ -1,0 +1,31 @@
+</html>
+  <head><title>Menamai Tombol</title></head>
+  <body bgcolor="cyan"><font face="arial">
+    <strong>Menamai Form dan Tombol<br />
+    <big>
+    <form name="formku">
+      <input type="button" name="tombol1" id="tombol1"
+             value="merah" />
+      <input type="button" name="tombol2" id="tombol2"
+             value="biru" />
+    </form>
+    <script type="text/javascript">
+      document.write("<b><br />Nama form: </b><em>" +
+        document.formku.name + "</em>");
+      document.write("<b><br />Nama form: </b><em>" +
+        document["formku"].name +"</em>");
+      document.write("<b><br />Nama dari tombol pertama: </b><em> " +
+        document["formku"]["tombol1"].name
+        + "</em>dan tipenya: <em>"
+        + document.formku.tombol1.type);
+      document.write("</em><b><br />Nilai dari bidang tombol1: </b><em> " +
+        document["formku"]["tombol1"].value);
+      document.write("</em><b><br />Nama dari tombol kedua: </b><em> "
+        + document.formku.tombol2.name);
+        document.write("</em><b><br />Nilai dari bidang tombol2: </b><em> "
+        + document.formku.tombol2.value);
+    </script>
+    </big>
+    </strong>
+  </body>
+</html>

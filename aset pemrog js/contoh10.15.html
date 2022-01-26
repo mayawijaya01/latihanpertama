@@ -1,0 +1,44 @@
+<html>
+  <head><title>Form HTML</title></head>
+  <body>
+    <b>
+    <form name=formKu
+          action="http://localhost/cgi-bin/identitas.pl"
+          method="post">
+      <p>
+      <fieldset><legend><big>Semua Tentang Anda</legend>
+      <p><font size=3 color="blue">
+      Ketikkan nama Anda di sini:
+      <input type="text"
+             name="namastring"
+             size="50" />
+      <p>
+      Anda bercerita tentang diri Anda di sini:<br />
+      <textarea name="komentar"
+                align="left"
+                rows="5" cols="50">Saya dilahirkan di...
+      </textarea>
+      <p>
+      <b>Pilih tempat kerja:</b><br />
+      <input type="checkbox"
+             name="tempat"
+             value="JKT" />Jakarta
+      <br />
+      <input type="checkbox"
+             name="tempat"
+             value="MDN" />Medan
+      <br />
+      <input type="checkbox"
+             name="tempat"
+             value="BDG"
+             checked />Bandung
+      <p></fieldset>
+    </form>
+    <p>
+    <a href="#" onClick="JavaScript: formKu.submit();" />
+    Klik di sini untuk mengirim form ini</a>
+    <p>
+    <a href="#" onClick="JavaScript: formKu.reset();" />
+    Klik di sini untuk mereset form ini</a>
+  </body>
+</html>

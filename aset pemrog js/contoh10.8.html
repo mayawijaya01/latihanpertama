@@ -1,0 +1,43 @@
+<html>
+  <head><title>Form HTML</title></head>
+  <body><big><strong>
+    <form action="/cgi-bin/buku/form1.cgi" method="post"><p>
+      <fieldset><legend>Semua Tentang Anda</legend>
+      <p>
+      Masukkan nama Anda di sini:
+      <input type="text" name="stringnama" size="50" />
+      </p>
+      <b>Pilih Tempat Kerja:</b><br />
+      <input type="checkbox" name="tempat"
+             value="JKT">Jakarta<br />
+      <input type="checkbox" name="tempat" value="MDN">Medan<br />
+      <input type="checkbox" name="tempat"
+             value="BDG" checked>Bandung<br />
+      <br />
+      <input type="radio" name="status"
+             value="senior" id="senior" />
+      <label for="senior">senior</label>
+      <br />
+      <input type="radio" name="status" value="dewasa" id="dewasa" />
+      <label for="senior">dewasa</label>
+      <br />
+      <input type="radio" name="status" value="anak" id="anak" />
+      <label for="senior">anak</label>
+      <br />
+      <br />Pilih Tempat Liburan:<br />
+      <select multiple name="location" />
+        <option selected value="toba">Danau Toba </option>
+        <option value="jogja">Jogjakarta</option>
+        <option value="senggigi">Senggigi</option>
+        <option value="solo">Solo</option>
+      </select>
+      <p>
+      </fieldset>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+      </p>
+    </form>
+    </big>
+    </strong>
+  </body>
+</html>

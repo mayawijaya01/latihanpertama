@@ -1,0 +1,51 @@
+<html>
+  <head><title>Slide Show</title>
+    <script type="text/javascript">
+      var i=0;
+      var timeout;
+      function praMuatCitra(){
+        if(document.images){
+          planet = new Array(); // variabel global
+          planet[0]=new Image();
+          planet[0]="/citra/Venus.jpg";
+          planet[1]=new Image();
+          planet[1]="/citra/Neptune.jpg";
+          planet[2]=new Image();
+          planet[2]="/citra/Earth.jpg";
+          planet[3]=new Image();
+          planet[3]="/citra/Mars.jpg";
+          planet[4]=new Image();
+          planet[4]="/citra/Jupiter.jpg";
+        }
+        else{
+          alert("tidak ada citra yang dipramuat");
+        }
+      }
+      function mulaiSlideShow(){
+        if(i < planet.length){
+          document.images["gambar_planet"].src = planet[i];
+          i++;
+        }
+        else{
+          i=0;
+          document.images["gambar_planet"].src = planet[i];
+        }
+        timeout = setTimeout('mulaiSlideShow()',1500);
+      }
+      function berhentiSlideShow(){
+        clearTimeout(timeout);
+      }
+    </script>
+  </head>
+  <body bgColor="black" onload = "praMuatCitra()">
+    <img name="gambar_planet" src="/citra/Jupiter.bmp" height="300"
+         width="300px" />
+    <form>
+      <br /><br />
+      <input type=button value="Mulai"
+             onClick="return mulaiSlideShow();"/>
+      <input type=button value="Berhenti"
+             onClick="return berhentiSlideShow();"/>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head><title>Pramuat Citra</title>
+    <script type="text/javascript">
+      function praMuatCitra(){
+        baby = new Array(); // variabel global
+        baby[0]=new Image();
+        baby[0].src="baby1.jpg";
+        baby[1]=new Image(); // Pramuat citra
+        baby[1].src="baby2.jpg";
+      }
+    </script>
+  </head>
+  <body bgcolor="cornflowerblue" onLoad="praMuatCitra();">
+    <h2>Ini Bayi Anda?</h2>
+    <a href="#" onMouseOver="document.bayi.src=baby[1].src;"
+       onMouseOut="document.bayi.src=baby[0].src;">
+    <img name="bayi" src="baby1.jpg" width=190 height=200 />
+    </a>
+  </body>
+</html>

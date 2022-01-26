@@ -1,0 +1,36 @@
+<html>
+  <head><title>Menggunakan Link</title>
+    <map name="peta_citra_ku">
+      <area shape="rect" href="spring5.jpg"onclick=
+            "this.href='JavaScript:void(0)';this.disable=true">
+      <area shape="rect" href="spring2.jpg"onclick=
+            "this.href='JavaScript:void(0)';this.disable=true">
+      <area shape="rect" href="spring3.jpg"onclick=
+            "this.href='JavaScript:void(0)';this.disable=true">
+      <area shape="rect" href="spring4.jpg"onclick=
+            "this.href='JavaScript:void(0)';this.disable=true">
+      <area shape="rect" href="spring5.jpg" onclick=
+            "this.href='JavaScript:void(0)';this.disable=true">
+      <area shape="rect" href="spring6.jpg" onclick=
+            "this.href='JavaScript:void(0)';this.disable=true" />
+      <area shape="default" href="spring1.jpg" />
+    </map>
+  </head>
+  <body>
+    <div align="center">
+    <h2>Spring di Jepang</h2>
+    <img src="spring1.jpg" height=257 width=343
+         usemap="#peta_citra_ku" />
+    <script type="text/javascript">
+      var lstr = "<ul>"; // tag untuk menciptakan list peluru
+      var pjg = document.links.length - 1;
+      for ( var i = 1; i < pjg; i++ ){ // Menciptakan links
+        lstr += "<li><a href=" + document.links[i].href;
+        lstr += ">spring" + i +" </a>\n";
+      }
+      lstr += "</ul>";
+      document.write(lstr);
+    </script>
+    </div>
+  </body>
+</html>

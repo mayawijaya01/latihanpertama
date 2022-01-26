@@ -1,0 +1,38 @@
+<html>
+  <head><title>Tangkap daku jika engkau bisa!</title></head>
+    <body>
+    <script type="text/javascript">
+      var usia=eval(prompt("Masukkan usia Anda:",""));
+      try{
+        if(usia>120 || usia < 0){
+          throw "Error1";
+        }
+        else if(usia == ""){
+          throw "Error2";
+        }
+        else if(isNaN(usia)){
+          throw "Error3";
+        }
+      }
+      catch(err){
+        if(err=="Error1"){
+          alert("Error! Nilai di luar rentang");
+        }
+        if(err=="Error2"){
+          alert("Error! Anda tidak memasukkan usia Anda!");
+        }
+        if(err=="Error3"){
+          alert("Error! Nilai bukan angka!");
+        }
+      }
+      if (usia < 13){
+        alert("Anda membayar tarif anak-anak!");
+      }
+      else if(usia < 55 ){
+        alert("Anda membayar tarif dewasa.");
+      }
+      else { alert("Anda membayar tarif usia lanjut.");
+      }
+    </script>
+  </body>
+</html>

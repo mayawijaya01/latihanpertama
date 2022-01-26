@@ -1,0 +1,25 @@
+table{
+    border: solid 1px black;
+}
+
+.bingkai{
+    background-image: url("cake.png");
+    text-align: center;
+}
+
+caption{
+    background-color: blue;
+    color: white;
+}
+
+td{
+    border: solid 1px gray;
+    padding: 10px;
+    vertical-align: top;
+}
+
+table.jenispuring{
+    background-color: #CCCC66;
+    border: none;
+    text-align: center;
+}

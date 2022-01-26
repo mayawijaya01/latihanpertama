@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Menggunakan kotak dialog prompt pada JavaScript</title>
+  </head>
+  <body>
+    <script type = "text/javascript">
+      var nama=prompt("Siapa nama Anda?", "");
+      alert("Selamat berjuang bro! " + nama);
+      var usia=prompt("Beritahu usia Anda.", "Usia Anda: ");
+      if ( usia == null){ // Jika pengguna mengklik tombol Cancel
+        alert("Tidak mau memberitahu usia Anda ya");
+      }
+      else{
+        alert(usia + " masih muda");
+      }
+      alert(prompt("Darimana Anda berasal? ", ""));
+    </script>
+  </body>
+</html>

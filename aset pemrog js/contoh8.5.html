@@ -1,0 +1,28 @@
+<html>
+  <head><title>Properti-Properti Array</title>
+    <h2>Properti-Properti Array</h2>
+    <script type="text/javascript">
+      var buku = new Array(); // Menciptakan sebuah objek Array
+      buku[0] = "War and Peace"; // Menugaskan nilai kepada elemen
+      buku[1] = "Huckleberry Finn";
+      buku[2] = "The Return of the Native";
+      buku[3] = "A Christmas Carol";
+      buku[4] = "The Yearling";
+      buku[5] = "Exodus";
+    </script>
+  </head>
+  <body bgcolor="lightblue">
+    <big>
+    <script type="text/javascript">
+      document.write("Array memiliki " + buku.length +
+        " elemen<br />");
+      document.write("Konstruktor buku adalah: "+
+        buku.constructor + "<br />");
+      buku.length=0;
+      document.write("Array buku dihapus! Buku pertama adalah"+
+        buku[0] );
+      document.write("<br />Ukuran sekarang adalah "+ buku.length);
+    </script>
+    </big>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head><title>Properti prototype</title>
+    <script type = "text/javascript">
+      // Memodifikasi fungsi-fungsi String
+      function hurufBesar(){
+        var str=this.bold().fontcolor("white").
+        toUpperCase().fontsize("22");
+        return(str);
+      }
+      String.prototype.hurufBesar=hurufBesar;
+    </script>
+  </head>
+  <body bgcolor="black">
+    <div align="center">
+    <script type="text/javascript">
+      var str="Awasi langkah Anda!!";
+      document.write(str.hurufBesar()+"<br />");
+    </script>
+    <img src="high_voltage.gif">
+    </div>
+  </body>
+</html>

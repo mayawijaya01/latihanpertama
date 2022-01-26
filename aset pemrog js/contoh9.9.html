@@ -1,0 +1,27 @@
+<html>
+  <head><title>Metode setTimeout</title>
+    <script type="text/javascript">
+      function ubahStatusBar(){
+        window.status = "Lihat saya sekarang sebelum saya menghilang!";
+        timeout =setTimeout("window.status=''", 6000);
+        // alert(timeout); Nilai ini berbeda dalam  Mozilla dan IE
+      }
+    </script>
+  </head>
+  <body><div align="center">
+    <font face="arial" size="3" color="blue">
+    Timeout ditetapkan 6 detik.
+    <br />
+    <img src="alarm.jpg" border=2>
+    <p>
+    Amati status bar
+    <br />
+    <form>
+      <input type="button"
+      value="klik di sini"
+      onClick="ubahStatusBar();">
+    </form>
+    </font>
+    </div>
+  </body>
+</html>

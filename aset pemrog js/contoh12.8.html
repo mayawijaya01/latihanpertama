@@ -1,0 +1,33 @@
+<html>
+  <head><title>Uji Event onResize</title>
+    <script type="text/javascript">
+      function susutLayar() {
+        var lebarBaru=screen.availWidth/2;
+        var tinggiBaru=screen.availHeight/2;
+        window.resizeTo(lebarBaru,tinggiBaru);
+        alert("Lebar layar: " +
+          lebarBaru+ " dan tinggi: "+ tinggiBaru);
+      }
+      function getDimensi() {
+        if (window.outerWidth){ // Firefox
+          alert("Event onResize: dimensi-dimensi awal layar: " +
+            screen.availWidth+" x "+ screen.availHeight+
+            "dimensi-dimensi baru: \n" + window.outerWidth + " "+
+            window.outerHeight);
+        }
+        else{ // Internet Explorer
+          alert("Event onResize: dimensi-dimensi awal layar: "+
+            screen.availWidth+" x "+ screen.availHeight+
+            "\ndimensi-dimensi baru: " + document.body.clientWidth +
+            " "+ document.body.clientHeight);
+        }
+      }
+    </script>
+  </head>
+  <body onResize="getDimensi();">
+    <form>
+      <input type="button" value="Klik untuk mengubah ukuran jendela"
+             onClick="JavaScript:susutLayar()" />
+      </form>
+  </body>
+</html>

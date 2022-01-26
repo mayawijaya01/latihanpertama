@@ -1,0 +1,10 @@
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.kiri{border-left: solid 1px blue;}

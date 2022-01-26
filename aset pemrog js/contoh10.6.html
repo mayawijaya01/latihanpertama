@@ -1,0 +1,37 @@
+<html>
+  <head><title>Menamai Objek form</title></head>
+  <body>
+    <form name="form1" id="form_pertama">
+    Masukkan Nama Anda:
+      <input type="text"
+             id="namabidang"
+             name="namabidang"
+             value="Nama: " />
+    </form>
+    <form name="form2" id="form_kedua">
+      <input type="button" value="Tekan di sini">
+    </form>
+    <big>
+    <script type="text/javascript">
+      // DOM Level 0. Bagaimana Anda mereferensi form dalam JavaScript?
+      // Turuni pohon dokumen: window/document/form.property
+      // Objek window bisa diabaikan, karena ia objek teratas
+      document.write( "Nama dari form pertama: " +
+        window.document.forms["form1"].name);
+      document.write( ".<br />Nama dari form kedua: " +
+        document.forms["form2"].name);
+      document.write(".<br />Yang dapat direferensi juga sebagai: <em>" +
+        'document["form2"].name'+".</em><br />");
+      document.write("Cara lain untuk mereferensi sebuah form: <em>" +
+        'document.form2.name' +".</em><br />");
+      // DOM Level 1. Cara W3C terstandarisasi
+      document.write("<br />Dengan menggunakan atribut id untuk mendapatkan nama form,<br />");
+      var f1 = document.getElementById("form_pertama");
+      // Mendefinisikan variabel-variabel
+      var f2 = document.getElementById("form_kedua");
+      document.write("Nama dari form pertama: " + f1.name + ".<br />");
+      document.write("Nama dari form kedua: " + f2.name + ".<br />");
+    </script>
+    </big>
+  </body>
+</html>

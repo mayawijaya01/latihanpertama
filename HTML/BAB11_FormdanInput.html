@@ -1,0 +1,121 @@
+<html>
+<title>BAB11 FORM DAN INPUT HTML</title>
+<body>
+<h2 align="center"> BAB 11 Form dan input Html</h2>
+<h3>Contoh - contoh Input</h3>
+<h4>Field Text</h4>
+<p>Contoh ini mendemonstrasikan field text dalam dokumen HTML, tempat pemakai dapat menuliskan teks ke dalam field tersebut, menggunakan tag input</p>
+<form>
+    Nama Depan :
+                <input type="text" name="firstnama"><br>
+    Nama Keluarga :
+                <input type="text" name="namakeluarga">
+</form>
+<h4>Checkbox</h4>
+Saya suka makanan :
+<form>
+    <input type="checkbox" name="pizza">pizza
+    <br>
+    <input type="checkbox" name="bakso">bakso
+    <br>
+    <input type="checkbox" name="seblak">seblak
+</form>
+<h4>Tombol Radio</h4>
+<form>
+    <input type="radio" checked name="Sex">Laki - laki
+    <br>
+    <input type="radio" checked name="Sex">Perempuan
+    <br>
+    <input type="radio" checked name="Sex">LadyBoy
+</form>
+<p>menggunakan tombol radio dalam dua group</p>
+<form>
+    <input type="radio" checked name="Sex">Laki - laki
+    <br>
+    <input type="radio" checked name="Sex">Perempuan
+    <br>
+    <input type="radio" checked name="Sex">LadyBoy
+    <br>
+    <input type="radio" checked name="usia">Anak - anak
+    <br>
+    <input type="radio" checked name="usia">Remaja
+    <br>
+    <input type="radio" checked name="usia">Dewasa
+</form>
+<h4>Dropdown Box Sederhana</h4>
+<p>dropdown box adalah daftar yang dapat dipilih</p>
+Merek mobil yang anda suka:
+<form>
+    <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="fiat">fiat</option>
+        <option value="audia">audia</option>
+    </select>
+</form>
+Merek mobil yang anda suka:
+<form>
+    <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="fiat" selected>fiat</option>
+        <option value="audia">audia</option>
+    </select>
+</form>
+<h4>Text Area</h4>
+<p>ini contoh menggunakan text are untuk memasukan data berupa komentar atupun catatan lainnya bersifat mirip artikel</p>
+<form>
+    <textarea rows="10" cols="30"> 10 januari 2022 jam 22:45 aku sedang belajar tentang form dan input html</textarea>
+</form>
+<h4>Tombol</h4>
+<p>contoh ini mendemonstrasikanmembuat sebuah tombol, pada button dapat mendefinisikan text yang diinginkan</p>
+<form>
+    <input type="button" value="Hallo World..!!!!">
+    <br>
+    <br>
+    <input type="button" value="Apa Kabar">
+</form>
+<h4>Fieldset sekitar data</h4>
+<p>membuat suatu border dengan caption di sekeliling data</p>
+<fieldset>
+    <legend>
+        Informasi Kesehatan :
+    </legend>
+    <form>
+        Tinggi<input type="text" size="3">
+        Berat <input type="text" size="3">
+    </form>
+</fieldset>
+<h3>contoh - contoh form</h3>
+<h4>Form dengan field input</h4>
+<p>menambahkan sebuah form ke dalam suatu page. form berisi suatu field input dan sebuah tombol submit</p>
+<form name="input" action="isiini.html" method="get">
+    Masukan Nama Anda:
+    <input type="text" name="nama_depan" value="mickey">
+    <br>
+    <input type="submit" value="submit">
+</form>
+<h4>form dengan tombol radio dan tombol submit</h4>
+<form name="input" action="isiini.html" method="get">
+    <input type="radio" checked name="sex">Laki - laki
+    <br>
+    <input type="radio" name="sex">Perempuan
+    <br>
+    <input type="submit" value="submit">
+</form>
+<h4>Mengirim Mail dari Form</h4>
+<form action="Mailto: info@pikis.itb.ac.id" method="post" enctype="text/plain">
+    <h3>Form ini akan mengirim email kepada bagian informasi pikisi itb - bandung.</h3>
+        Nama: <br>
+        <input type="text" name="name" value="yourname" size="20">
+    <br>
+    Address: <br>
+    <input type="text" name="address" value="youraddress" size="20">
+    <br>
+    Mail: <br>
+    <input type="text" name="mail" value="yourmail" size="20"><br><br>
+    <input type="submit" value="send">
+    <input type="reset" value="reset">
+</form>
+</body>
+</html>

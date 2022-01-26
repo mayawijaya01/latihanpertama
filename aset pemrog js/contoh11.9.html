@@ -1,0 +1,24 @@
+<html>
+  <head>
+  <title>Planet Bumi</title>
+    <script type="text/javascript">
+      function ingatkan_saya(){
+      alert("Lebar luar dari jendela: "
+        +window.outerWidth+" dan tinggi luar: "
+        +window.outerHeight);
+      }
+      function ubahBumi() {
+        document.images["bumi"].style.height =
+        (document.body.clientHeight - 75) * 0.9;
+      }
+    </script>
+  </head>
+  <body onload="ubahBumi();">
+    <div style="margin-top:75px; text-align:center">
+    <img name="bumi"
+         src="bumi.jpg"
+         alt="gambar bumi"
+         onclick="ingatkan_saya();"/>
+    </div>
+  </body>
+</html>

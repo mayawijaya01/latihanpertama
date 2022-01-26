@@ -1,0 +1,28 @@
+<html>
+  <head><title>Katakunci this</title>
+    <script type="text/javascript">
+      function tampil_nilform(formku){
+        alert("Nilai kotak teks adalah: " + formku.namastring.value );
+      }
+      function tampil_niltombol(tombolku){
+        alert("Nilai tombol adalah: " + tombolku.value);
+      }
+    </script>
+  </head>
+  <body><b>
+    <hr>
+    <form name="form_sederhana">
+      <p>
+      Ketikkan nama Anda di sini:
+      <input type="text" name="namastring" size="50" />
+      <p>
+      <input type="button"
+             value="Menampilkan Form"
+             onClick="tampil_nilform(this.form);" />
+      <input type="button"
+             value="Menampilkan Tombol"
+             onClick="tampil_niltombol(this);" />
+      <input type="reset" value="Clear">
+    </form>
+  </body>
+</html>

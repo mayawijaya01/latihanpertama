@@ -1,0 +1,22 @@
+<html>
+  <head><title>Cari dan Ganti</title></head>
+  <body bgcolor=lightgreen>
+    <font face="arial" size="+1">
+    Metode Pencari dan Pengganti<br />
+    <small>
+    <script type="text/javascript">
+      var str_alamat = "RismonSianipar@nama-server.org";
+      document.write("String asli adalah "+ str_alamat
+        + "<br />");
+      document.write( "String baru menjadi "+
+      str_alamat.replace("Rismon","Robert")+"<br />");
+      var indeks=str_alamat.search("server");
+      document.write("Metode search() menemukan \"server\" pada posisi "+ indeks +"<br />");
+      var substrku=str_alamat.substr(indeks,6);
+      document.write("Setelah penggantian \"server\" dengan \"POP\" <br />");
+      document.write(str_alamat.replace(substrku,"POP")+"<br />");
+    </script>
+    </small>
+    </font>
+  </body>
+</html>

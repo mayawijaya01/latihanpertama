@@ -1,0 +1,25 @@
+<html>
+  <head><title>Mengekstrak Substring</title></head>
+  <body bgcolor=lightgreen>
+    <font face="arial">
+    <big>Mengekstrak Substring</big>
+    <small>
+    <script type="text/javascript">
+      var str_alamat = "RismonSianipar@nama_server.org";
+      document.write("<br />Nama:<em> " +
+      str_alamat.substr(0,6) + "</em>.<br />");
+      var arr_nama = str_alamat.split("@" );
+      document.write( "Nama user: <em> " + arr_nama[0] +
+        "</em>.<br />");
+      document.write( "dan server email: <em> " + arr_nama[1]
+        + "</em>.<br />");
+      document.write( "Karakter pertama di dalam string: <em>"
+        + str_alamat.charAt(0)+ "</em>.<br />");
+      document.write( "dan karakter terakhir di dalam string: <em>"
+        + str_alamat.charAt(str_alamat.length - 1)
+        + "</em>.<br />");
+    </script>
+    </small>
+    </font>
+  </body>
+</html>

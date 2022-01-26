@@ -1,0 +1,24 @@
+<html>
+  <head><title>Objek-Objek yang Didefinisikan Sendiri</title>
+    <script type= "text/javascript">
+      var mainan = new Object(); // Menciptakan objek
+      mainan.nama = "Lego";      // Menugaskan properti-properti
+      mainan.warna = "merah";
+      mainan.bentuk = "persegi-panjang";
+      mainan.tampil=tampilObjek; // Nama fungsi ditugaskan sebagai
+                                 // sebuah properti dari objek
+      function tampilObjek(){
+        document.write("<b>Mainan bernama " + mainan.nama + ".<br>");
+        document.write("Dengan warna " + mainan.warna + " " + mainan.bentuk
+          + ".<br />");
+      }
+    </script>
+  </head>
+  <body>
+    <script type = "text/javascript">
+      mainan.tampil(); //Metode objek dipanggil
+      mainan.warna="biru";
+      mainan.tampil();
+    </script>
+  </body>
+</html>

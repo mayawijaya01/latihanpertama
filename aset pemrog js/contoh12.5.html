@@ -1,0 +1,30 @@
+<html>
+  <head><title>Event onLoad dan onUnLoad</title>
+    <script type="text/javascript">
+      var det=0;
+      function sekarang(){
+        var tanggalbaru= new Date();
+        var jam=tanggalbaru.getHours();
+        var menit=tanggalbaru.getMinutes();
+        var detik=tanggalbaru.getSeconds();
+        var strwaktu=jam+":"+menit+":"+detik;
+        window.setInterval("jejakWaktu()", 1000);
+        alert("Dokumen Anda selesai dimuat\n"+
+          "Waktu: "+strwaktu);
+      }
+      function jejakWaktu(){
+        det++;
+      }
+      function berapaLama(){
+        alert("Anda telah menjelajah di sini selama "+ det+" detik");
+      }
+    </script>
+  </head>
+  <body background="art.jpg" onLoad="sekarang();" 
+        onUnLoad="berapaLama();">
+    <font face="arial,helvetica" size=5 color="white">
+    Ketika Anda meninggalkan atau merefresh halaman ini, <br />sebuah kotak dialog
+    alert akan ditampilkan.
+    </font>
+  </body>
+</html>

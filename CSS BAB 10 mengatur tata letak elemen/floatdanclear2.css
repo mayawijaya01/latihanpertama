@@ -1,0 +1,26 @@
+.alpha{
+    border: solid 2px black;
+    text-align: center;
+}
+
+.bravo{
+    float: left;
+    border: solid 2px black;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+}
+
+.charlie{
+    float: right;
+    border: solid 2px black;
+    text-align: center;
+    width: 300px;
+}
+
+.delta{
+    clear: left;
+    border: solid 2px black;
+    text-align: center;
+    width: 200px;
+}

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Penanganan Event dan Form</title>
+    <script type="text/javascript">
+      function salamku(pesan){
+        alert(pesan);
+      }
+    </script>
+  </head>
+  <body bgcolor="white">
+    <h2>
+    Salam Pesan
+    </h2>
+    <hr>
+    <form>
+      <input type="button" value="Pagi"
+             onClick="salamku('Selamat Pagi. Semoga pekerjaan Anda lancar hari ini!')" />
+      <input type="button" value="Siang"
+             onClick="salamku('Ayo makan siang')" />
+      <input type="button" value="Malam"
+             onClick="salamku('Selamat tidur.\nSemoga mimpi indah...')" />
+    </form>
+  </body>
+</html>

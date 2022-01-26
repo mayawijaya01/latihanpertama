@@ -1,0 +1,17 @@
+<html>
+  <head><title>Loop Melalui Properti-Properti Objek</title></head>
+  <body>
+    <script type="text/javascript">
+      var arrayProperti=new Array();
+      for ( var properti in window.document){
+        arrayProperti.push(properti);
+      }
+      for(i=0;i<arrayProperti.length; i++){
+        document.write( arrayProperti[i] + " ");
+        if( i>0 && i%4 == 0 ){
+          document.write("<br />");
+        }
+      }
+    </script>
+  </body>
+</html>

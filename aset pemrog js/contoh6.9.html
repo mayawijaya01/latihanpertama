@@ -1,0 +1,23 @@
+<html>
+  <head><title>Closure</title>
+    <script type="text/javascript">
+      function lukis(tipe, warna) {
+        var str = "Bunga" + tipe + " berwarna " + warna; //variabel lokal
+        var beritahu = function() { // Fungsi anonim
+          document.write("<big>"+str+".</big><br />")
+        }
+        return beritahu; // menghasilkan sebuah referensi terhadap fungsi
+      }
+    </script>
+  </head>
+  <body bgColor="lightgreen">
+    <h2>Menguji sebuah closure</h2>
+    <script type="text/javascript">
+      var katakan1 = lukis("mawar","merah"); 
+      var katakan2 = lukis("matahari", "kuning");
+      alert(katakan1); // Melihat nilai pada katakan1
+      katakan1(); // Memanggil fungsi anonim
+      katakan2();
+    </script>
+  </body>
+</html>

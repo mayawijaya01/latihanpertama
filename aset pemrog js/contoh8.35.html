@@ -1,0 +1,23 @@
+<html>
+<head><title>Katakunci with</title></head>
+  <body>
+    <h2>Menggunakan katakunci <em>with</em></h2> 
+    <p>
+    <h3>
+    <script type="text/javascript">
+      var nama_anda=prompt("Siapa nama Anda? ","");
+      // Menciptakan sebuah objek String
+      with(nama_anda){
+        document.write("Selamat datang " + nama_anda +
+          " ke planet kami!!<br />");
+        document.write("Nama Anda memiliki panjang " + length +
+          " karakter.<br />");
+        document.write("Nama Anda dengan semua huruf besar: " + toUpperCase()
+          + ".<br />");
+        document.write("Nama Anda dengan semua huruf kecil: " + toLowerCase()
+          + ".<br />");
+      }
+    </script>
+    </h3>
+  </body>
+</html>

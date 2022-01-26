@@ -1,0 +1,28 @@
+<html>
+  <head><title>Kotak Area Teks</title></head>
+  <font face="verdana">
+  <body bgcolor="lightgreen">
+    <font face="verdana">
+    <form name="form1">
+      <strong>
+        Selesaikan cerita ini
+      </strong><br />
+      <textarea name="cerita" rows="8" cols="60" >
+        Suatu hari, seorang gadis cantik ...
+      </textarea>
+    </form>
+    <script type="text/javascript">
+      document.write( "Tipe dari divais masukan:<em> "+
+        document.form1.cerita.type);
+      document.write( "<br /></em>Area teks dinamai:<em> "+
+        document.form1.cerita.name);
+      document.write("<br /></em>Jumlah baris di dalam "+
+        "area teks:<em> "+document.form1.cerita.rows);
+      document.write("<br /></em>Nilai dari area teks:<em>"
+        + document.form1.cerita.value);
+      document.write( "<br /></em>Jumlah kolom di dalam "
+        + "area teks:<em>"+ document.form1.cerita.cols);
+    </script>
+    </font>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+<html>
+<title>Bab9 Tabel HTML</title>
+<body>
+<p>setiap tabel dimlai dengan sebuah tag table.
+setiap baris dimulai dengan sebuah tag tr.
+setiap data dimulai dengan sebuah tag td</p>
+<h4>satu kolom:</h4>
+<table border="1">
+    <tr>
+        <td>100</td>
+    </tr>
+</table>
+<h4>satu baris dan tiga kolom:</h4>
+<table border="1">
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+</table>
+<h4>dua baris dan tiga kolom:</h4>
+<table border="1">
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+</table>
+<p>contoh ini selesai sampai sini</p>
+<h2>9.1 Border Tabel</h2>
+<p>contoh ini mendemonstasikan border tebal yang berbeda-beda</p>
+<h4>Dengan border normal:</h4>
+<table border="1">
+    <tr>
+        <td>kesatu</td>
+        <td>barisnya</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>barisnya</td>
+    </tr>
+</table>
+<h4>dengan border tebal:</h4>
+<table border="8">
+    <tr>
+        <td>kesatu</td>
+        <td>barisnya</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>barisnya</td>
+    </tr>
+</table>
+<h4>dengan baris yang sangat tebal:</h4>
+<table border="15">
+    <tr>
+        <td>kesatu</td>
+        <td>barisnya</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>barisnya</td>
+    </tr>
+</table>
+<h2>9.2 tabel tanpa border</h2>
+<table border="0">
+<tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+</tr>
+    <tr>
+        <td>400</td>
+        <td>500</td>
+        <td>600</td>
+    </tr>
+</table>
+<h2>9.3 Tabel dengan Caption</h2>
+<table border="6"><caption>my caption</caption>
+    <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>400</td>
+        <td>500</td>
+        <td>600</td>
+    </tr>
+</table>
+<h2> 9.4 Header</h2>
+<h4>Tabel Header :</h4>
+<table border="3">
+    <tr>
+        <th>Nama</th>
+        <th>jenis kelamin</th>
+        <th>usia</th>
+    </tr>
+    <tr>
+        <td>tonni</td>
+        <td>laki laki</td>
+        <td>27</td>
+    </tr>
+</table>
+<h4> vertical header :</h4>
+<table border="2">
+<tr>
+    <th>nama</th>
+    <td> tonni</td>
+</tr>
+<tr>
+    <th>jenis kelamin</th>
+    <td>laki laki</td>
+</tr>
+<tr>
+    <th>usia</th>
+    <td>27</td>
+</tr>
+</table>
+<h2>9.5 colspan dan rowspan</h2>
+<p>contoh ini mendemonstrasikan bagaimana untuk mendefinisikan cell tabel dilebarkan lebih dari satu baris atau satu kolom</p>
+<h4>cell that spans two columns</h4>
+<table border="2">
+    <tr>
+        <th>Nama</th>
+        <th colspan="2"> telephone </th>
+    </tr>
+    <tr>
+        <td>alex</td>
+        <td>082376</td>
+        <td>085823</td>
+    </tr>
+</table>
+<h4> cell that spans two rows : </h4>
+<table border="1">
+    <tr>
+        <th>nama</th>
+        <td>alex</td>
+    </tr>
+    <tr>
+        <th rowspan="2"> telephone</th>
+        <td>0858436</td>
+    </tr>
+    <tr>
+        <td>082367</td>
+    </tr>
+</table>
+<h2>9.6 Empty Cell</h2>
+<table border="1">
+    <tr>
+        <td>some text</td>
+        <td>some text</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>some text</td>
+    </tr>
+</table>
+<h2>9.7 Tag di dalam suatu Tabel</h2>
+<p>contoh ini mendemonstrasikan bagaimana menampilkan elemen di dalam elemen lain</p>
+<table border="2">
+    <tr>
+        <td>
+            <p>ini ceritanya paragraf</p>
+            <p>ini ceritanya paragraf yang lain</p>
+
+        </td>
+        <td>ada tabel yang lain di dalam cell ini:
+        <table border="1">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td>di dalam cell ini ada list
+        <ul>
+            <li>apel</li>
+            <li>pisang</li>
+            <li>nanas</li>
+        </ul>
+        </td>
+        <td></td>
+    </tr>
+</table>
+<h2>9.8 Cellpadding</h2>
+<p>contoh ini mendemonstrasikan bagaimana menggunakan cellpadding untuk membuat spasi lebih dari antra sel dan bordernya</p>
+<h4>Tanpa cellpadding :</h4>
+<table border="2">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4> Dengan cellpadding:</h4>
+<table border="2" cellpadding="15">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h2>9.9 cellspacing untuk menambah jarak antar sel</h2>
+<h4>Tanpa cellspacing :</h4>
+<table border="2">
+<tr>
+    <td>pertama</td>
+    <td>row</td>
+</tr>
+<tr>
+    <td>kedua</td>
+    <td>row</td>
+</tr>
+</table>
+<h4>Dengan cellspacing :</h4>
+<table border="2" cellspacing="10">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h2>9.11 Background sel Tabel : memberi background untuk satu sel atau lebih</h2>
+<table border="2">
+    <tr>
+        <td bgcolor="aqua" >pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h2>9.12 Mengatur (Align) isi sel</h2>
+<table width="1000"  border="3">
+    <tr>
+        <th align="left">Money spent </th>
+        <th align="right">januari</th>
+        <th align="right">februari</th>
+    </tr>
+    <tr>
+        <td align="left">pakaian</td>
+        <td align="right">200000</td>
+        <td align="right">30000</td>
+    </tr>
+    <tr>
+        <td align="left">make-up</td>
+        <td align="right">150000</td>
+        <td align="right">25000</td>
+    </tr>
+    <tr>
+        <td align="left">makanan</td>
+        <td align="right">400000</td>
+        <td align="right">55000</td>
+    </tr>
+    <tr>
+        <td align="left">jumlah</td>
+        <td align="right">750000</td>
+        <td align="right">110000</td>
+    </tr>
+</table>
+<h2>9.13 Tabel dalam tabel</h2>
+<table border="5">
+    <tr>
+        <td>parent 1</td>
+        <td>
+            <table border="2">
+                <tr>
+                    <td> anak 1</td>
+                    <td>
+                        <table border="1">
+                            <tr>
+                                <td>cucu 1</td>
+                                <td>cucu 2</td>
+                            </tr>
+                            <td>cucu 3</td>
+                            <td>cucu 4</td>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>anak 2</td>
+                    <td>anak 3</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <td>orang tua 2</td>
+    <td>orang tua 3</td>
+    <tr></tr>
+</table>
+<h2>9.14 Atribut frame untuk mengatur border tabel</h2>
+<p>if you see no frames around the tables in the these examples, your browser is too old,
+or does not support it </p>
+<h4>with frame="border":</h4>
+<table frame="border">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame box</h4>
+<table frame="box">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame box</h4>
+<table frame="box">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame void</h4>
+<table frame="void">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame above</h4>
+<table frame="above">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame below</h4>
+<table frame="below">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame hsides</h4>
+<table frame="hsides">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame vsides</h4>
+<table frame="vsides">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame lhs</h4>
+<table frame="lhs">
+    <tr>
+        <td>pertama</td>
+        <td>row</td>
+    </tr>
+    <tr>
+        <td>kedua</td>
+        <td>row</td>
+    </tr>
+</table>
+<h4>with frame rhs</h4>
+<table frame="rhs">
+<tr>
+    <td>pertama</td>
+    <td>row</td>
+</tr>
+<tr>
+    <td>kedua</td>
+    <td>row</td>
+</tr>
+</table>
+<p>11 januari 2022 jam 23:05 bab 9 selesai ku coba namun 9.10 aku skip dulu</p>
+<p>masa iya bisa sih</p>
+</body>
+</html>

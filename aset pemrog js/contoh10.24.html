@@ -1,0 +1,39 @@
+<html>
+  <head><title>Tombol Radio</title>
+    <script type="text/javascript">
+      function ubahWarnaLatar(f){
+        for (var i = 0; i < f.warna.length;i++){
+          if(f.warna[i].checked){
+            document.bgColor= f.warna[i].value;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body bgcolor="#CCFFFF">
+    <font face="arial"><b>
+    <form name="formradio">
+      Pilih warna latar:<p>
+      <input type=radio
+             name="warna"
+             value="#0099CC" />dark cyan<br />
+      <input type=radio
+             name="warna"
+             value="#339966" />teal<br />
+      <input type=radio
+             name="warna"
+             value="#FF00FF" />magenta<br />
+      <input type=radio
+             name="warna"
+             value="#FFFF66" />light yellow<br />
+      <input type=radio
+             name="warna"
+             value="#FF9933" />light orange<br />
+      <p>
+      <input type=button
+             value="Klik untuk ganti warna" onClick="ubahWarnaLatar(this.form);" />
+      <input type="reset" />
+    </form>
+    </font>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <head><title>Form HTML dan Event Handler onSubmit</title>
+    <script type="text/javascript">
+      function periksaForm(infoanda){
+        if(infoanda.namastring.value == "" ||
+            infoanda.namastring.value == null){
+          // periksa string kosong atau nilai null
+          alert("Silahkan ketik nama Anda");
+          return(false);
+        }
+        else{
+          return(true);
+        }
+      }
+    </script>
+  </head>
+  <body><big>
+  <b>
+    <form name="info" action="/cgi-bin/bookstuff/form1.cgi"
+          method="post"
+          onSubmit="return periksaForm(document.info)">
+      <br /><br />
+      Ketikkan nama Anda di sini:
+      <input type="text" name="namastring" size="50" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </form>
+    <big>
+  </body>
+</html>

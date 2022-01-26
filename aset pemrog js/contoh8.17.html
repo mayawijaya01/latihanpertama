@@ -1,0 +1,18 @@
+<html>
+  <head><title>Tanggal dan Waktu</title></head>
+  <body bgcolor="aqua"><h2>Tanggal dan Waktu</h2>
+    <big>
+    <script type="text/javascript">
+      var skrg = new Date(); // skrg adalah instans dari objek Date
+      document.write("<b>Waktu lokal:</b> " + skrg + "<br />");
+      var jam=skrg.getHours();
+      var menit=skrg.getMinutes();
+      var detik=skrg.getSeconds();
+      var tahun=skrg.getFullYear();
+      document.write("Tahun (format penuh) " + tahun +"<br />");
+      document.write("<b>Waktu:</b> " +
+        jam + ":" + menit + ":" + detik);
+    </script>
+    </big>
+  </body>
+</html>

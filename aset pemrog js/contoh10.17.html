@@ -1,0 +1,40 @@
+<html>
+  <head><title>Kotak Teks</title></head>
+  <body bgcolor="azure">
+    <form name="form1"
+          id="form1">
+      Masukkan nama Anda:<br />
+      <input type="text"
+             name="namabidang"
+             id="namabidang"
+             size=30 value="Nama: "
+             onFocus="document.form1.namabidang.select()" />
+             <!-- onFocus="this.select()"> -->
+      </form>
+      <br />
+      <font face=arial>
+      <big>
+      <script type="text/javascript">
+      // Bagaimana Anda mereferensi bidang teks dari form pada JavaScript?
+      // Turuni pohon document: document.form[].element.property
+        document.write( "Tipe dari divais masukan:<em> "+
+          document.form1.namabidang.type);
+        // document.write("Tipe dari divais masukan:<em> "+
+          // document["form1"]["namabidang"].type);
+        document.write( "<br /></em>Kotak-teks dinamai:<em> "+
+          document.form1.namabidang.name);
+        document.write("<br /></em>Nilai dari bidang teks:<em>"
+          + document.form1.namabidang.value);
+        document.write("<br /></em>Ukuran dari bidang teks:<em>"
+          + document.form1.namabidang.size);
+
+		// Menggunakan atribut id dari elemen
+        var tbidang=document.getElementById("namabidang");
+        document.write("<br />Atribut id dari kotak-teks: "+tbidang.id);
+        document.write("<br />Nama dari kotak-teks: "+
+          tbidang.name+"<br />");
+      </script>
+      </big>
+      </font>
+  </body>
+<html>

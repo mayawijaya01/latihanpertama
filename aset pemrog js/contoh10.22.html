@@ -1,0 +1,43 @@
+<html>
+  <head><title>Menu Drop-Down</title>
+    <script type="text/javascript">
+      function jadwal(f){
+        if(f.menu1.selectedIndex == 0){
+          // Dapat juga dituliskan: document.form1.menu1.selectedIndex
+          f.teks1.value="TKI203, Feb 3-7, 9pg sampai 5sore, Ruangan 2133, Pak. Soesianto"
+          // Dapat juga dituliskan: document.form1.teks1.value
+        }
+        if(f.menu1.selectedIndex == 1){
+          f.teks1.value="TKI200 Feb 10-13 9pg sampai 5sore, Ruangan 209B, Pak. Adhi";
+        }
+        if(f.menu1.selectedIndex == 2){
+          f.teks1.value="TKI201 Mar 2-6 9pg sampai 5sore, Ruangan 209, Pak. Insap";
+        }
+        if(f.menu1.selectedIndex == 3){
+          f.teks1.value="TKI202 Apr 10-13 9pg sampai 5sore, Ruangan 209B, Bu. Wahyuni";
+        }
+      }
+    </script>
+  </head>
+  <body bgcolor="lightgreen">
+    <font face="arial">
+    <b>
+    <form name="form1">
+      Pilih Matakuliah<br />
+      <select name="menu1" size="4"
+              onChange="jadwal(this.form)">
+        <option name="pilihan1" value="Perl1">Pemrograman
+          Perl</option>
+        <option name="pilihan2" value="Perl2">Pemrograman
+          Perl Lanjut</option>
+        <option name="pilihan3" value="Unix1">Pemrograman
+          Unix</option>
+        <option name="pilihan4" value="Shell1">Pemrograman
+          Shell</option>
+      </select>
+      <br /><br />
+      <input type="text" name="teks1" size=65 />
+    </form>
+    </font>
+  </body>
+</html>

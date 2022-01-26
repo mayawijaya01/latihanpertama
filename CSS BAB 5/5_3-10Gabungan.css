@@ -1,0 +1,21 @@
+.karakter{letter-spacing: 0.4em;}
+.kata{word-spacing: 1.5em;}
+.format{padding-top: 1cm;
+        padding-right: 1cm;
+        padding-bottom: 1cm;
+        padding-left: 2cm;}
+.margin{margin-left: 1cm;
+        border: solid;}
+.padding{padding-left: 1cm;
+    border: solid;}
+.ind{text-indent: 50px;}
+.capital{text-transform: capitalize;}
+.lower{text-transform: lowercase;}
+.upper{text-transform: uppercase;}
+.coret{text-decoration: line-through;}
+.bertopi{text-decoration: overline;}
+.garisbawah{text-decoration: underline;}
+.kedip{text-decoration: blink;}
+.superscript{vertical-align: super;}
+.subscript{vertical-align: -40%;}
+.stabilo{background-color: yellowgreen;}

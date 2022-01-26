@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Rekursi</title>
+      <script type="text/javascript">
+        function atasBawah(nomor){
+          document.write("<b><font size='+1'>Level "
+            + nomor + "</b><br />");
+          if(nomor < 4){
+            atasBawah(nomor + 1); // Fungsi memanggil dirinya
+            document.write("<em>Level "+ nomor + "<em><br />");
+          }
+        }
+      </script>
+  </head>
+  <body bgcolor="lightblue">
+    <h2>Rekursi</h2>
+    <script type="text/javascript">
+      atasBawah(1);
+    </script>
+  </body>
+</html>

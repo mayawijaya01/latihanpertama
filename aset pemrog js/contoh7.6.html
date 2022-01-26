@@ -1,0 +1,19 @@
+<html>
+  <head><title>Fungsi</title>
+    <script type="text/javascript">
+      function Jarak(r, t){ //Fungsi konstruktor
+        this.kec = r;
+        this.waktu = t;
+        this.hitung=function() { return r * t; } // anonim
+      }
+    </script>
+  </head>
+  <body>
+    <script type ="text/javascript">
+      var perjalanan1 = new Jarak(50, 1.5);
+      var perjalanan2 = new Jarak(75, 3.2);
+      alert("jarak perjalanan 1: "+ perjalanan1.hitung());
+      alert("jarak perjalanan 2: "+ perjalanan2.hitung());
+    </script>
+  </body>
+</html>

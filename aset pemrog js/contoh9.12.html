@@ -1,0 +1,56 @@
+<html>
+  <head><title>Menggulung Gambar Tahun Baru</title>
+    <script type="text/javascript">
+	// Menciptakan jendela baru dengan citra.
+      winObj=window.open("new_year.gif","tahunbaru", "width=350,height=292,resizable=no"); 
+      winObj.moveTo(0, 0);
+      winObj.focus();
+      var pospiksel=0;
+      var LebarCitra=1096;
+      var langkahpiksel = 2;
+      var timeout;
+	  
+      function mulaiBergerak(){
+        if (pospiksel <= (LebarCitra - 350)){
+        // Memeriksa bahwa penggulungan masih berada di dalam
+        // batas-batas jendela.
+          pospiksel += langkahpiksel;
+          winObj.scrollTo(pospiksel,0); // ke posisi tersebut
+          // di dalam jendela baru
+          timeout=setTimeout(mulaiBergerak,20);
+        }
+      }
+      function bergerakLagi(){
+        pospiksel = 0; // Mengatur-ulang posisi piksel horisontal menjadi 0
+        mulaiBergerak(); // Mulai bergerak lagi
+      }
+      function berhentiDisini(){
+        clearTimeout(timeout); // Menghentikan pewaktu untuk berhenti bergerak
+      }
+      function tutupJendela(){
+        winObj.close();
+      }
+    </script>
+  </head>
+  <body bgColor="lightgreen">
+    <font face="arial" size=4 >
+    <b><br />
+    <div align="center">
+    Jendela dengan tahun baru
+    <form>
+      <input type="button"
+        value="Mulai bergerak"
+        onClick="mulaiBergerak();">
+      <input type="button"
+        value="Berhenti bergerak"
+        onClick="berhentiDisini();">
+      <input type="button"
+        value="Mulai lagi"
+        onClick="bergerakLagi();">
+    </form></font>
+    <font size=-1>
+    <p>Ketika Anda siap untuk menutup jendela, klik di sini<br />
+    <a href="JavaScript:tutupJendela()">Tutup jendela</a>
+    </font>
+  </body>
+</html>

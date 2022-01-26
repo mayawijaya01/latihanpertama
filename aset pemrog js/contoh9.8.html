@@ -1,0 +1,29 @@
+<html>
+  <head><title>Memindahkan Jendela</title>
+    <script type="text/javascript">
+      function arah(){
+        winObj=window.open("tempatku.html","tempatku", "width=200,height=300,resizable=no");
+        winObj.moveTo(0, 0); // Memindahkan jendela ke pojok kiri atas
+        winObj.focus();
+        parent.window.moveTo(215, 0); // Memindahkan jendela induk
+        parent.window.resizeTo(400,400); // Mengubah ukuran jendela browser
+      }
+      function tutupJendela(){
+        winObj.close();
+      }
+    </script>
+  </head>
+  <body bgColor="lightblue">
+    <h2>Anda pindah!</h2>
+    Ke arah-arah yang ditetapkan,
+    <br />
+    klik tombol ini
+    <form >
+      <input type="button"
+        value="Arah-Arah Sederhana"
+        onClick="arah();">
+      <p>Ketika Anda siap untuk menutup jendela, klik di sini</p>
+    </form>
+    <a href="JavaScript:tutupJendela()">Tutup jendela</a>
+  </body>
+</html>

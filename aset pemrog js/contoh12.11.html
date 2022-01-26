@@ -1,0 +1,45 @@
+<html>
+  <head><title>Empat Musim</title>
+    <script type="text/javascript">
+      var musim = new Array();
+      var indeks = 0;
+      var waktuTunda=2000;
+      musim[0]=new Image();
+      musim[0].src="winter.jpg";
+      musim[1]=new Image();
+      musim[1].src="summer.jpg";
+      musim[2]=new Image();
+      musim[2].src="fall.jpg";
+      musim[3]=new Image();
+      musim[3].src="spring.jpg";
+      function ubahMusim(){
+        var size= musim.length - 1;
+        if( indeks < size ) {
+          indeks++;
+        }
+        else {
+          indeks = 0;
+        }
+        document.waktu.src= musim[indeks].src;
+        timeout=setTimeout('ubahMusim()', waktuTunda);
+      }
+      function hentiTampil(){
+        clearTimeout(timeout);
+      }
+    </script>
+  </head>
+  <body bgcolor="cornflowerblue">
+    <div align="center"><font face="arial">
+    <h2>Empat Musim</h2><b>
+    Untuk melihat slideshow, tempatkan mouse pada citra.<br />
+    Jauhkan mouse dari citra untuk menghentikannya.
+    <a href="JavaScript:void(null);"
+       onMouseOver="return ubahMusim();"
+       onMouseOut="return hentiTampil()">
+    <img name="waktu" src="winter.jpg" align="left"
+         border=8 hspace="10" width="700" height="350">
+    </a>
+    <br />
+    </div>
+  </body>
+</html>

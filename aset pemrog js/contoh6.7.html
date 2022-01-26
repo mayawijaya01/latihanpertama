@@ -1,0 +1,23 @@
+<html>
+  <head><title>Fungsi Tak Bernama</title>
+    <script type="text/javascript">
+      var salam=function(){ // Fungsi tak bernama
+        pesan="Salam dan Sukses! "; // Definisi fungsi
+        return pesan;
+      }
+    </script>
+  </head>
+  <body>
+    <big>
+    <script type="text/javascript">
+      teks=salam;
+      // salam adalah sebuah variabel;
+      // nilainya adalah definisi fungsi
+      document.write(teks +"<br />");
+	  
+      teks=salam(); // Memanggil fungsi
+      document.write(teks +"<br />");
+    </script>
+    </big>
+  </body>
+</html>

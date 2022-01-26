@@ -1,0 +1,28 @@
+<html>
+  <head><title>Kotak Password</title>
+    <script type="text/javascript">
+      function verifikasi(pw){
+        if ( pw.value == "masuk" ){
+          alert("Pintu terbuka sekarang!");
+      }
+      else{
+        alert("Maaf, Anda tidak bisa masuk. Silahkan pergi.");
+      }
+    }
+    </script>
+  </head>
+  <body bgcolor="#330033"><font color="FFCCFF">
+    <div align="center">
+    <h2>Selamat Datang ke Ruangan Rahasia</h2>
+    <img src="kristian.gif"><br />
+    Untuk masuk, password diperlukan:<br />
+    <form name="form1" id="form1">
+      <input type="password"
+             name="bidangpassword"
+             size="30"
+             onBlur="return verifikasi(this)"/>
+      <input type=button value="Klik untuk verifikasi"/>
+    </form>
+    </div>
+  </body>
+</html>

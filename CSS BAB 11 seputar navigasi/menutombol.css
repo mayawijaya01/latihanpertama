@@ -1,0 +1,27 @@
+#menupencari a:link, #menupencari a:visited{
+    color: black;
+    text-decoration: none;
+    padding: 4px 10px 4px 10px;
+    border-top: solid 1px red;
+    border-left: solid 1px red;
+    border-bottom: solid 2px red;
+    border-right: solid 2px red;
+    background-color: yellow;
+}
+
+#menupencari a:hover{
+    border-top: solid 2px gray;
+    border-top: solid 2px gray;
+    border-bottom: solid 1px white;
+    border-right: solid 1px white;
+}
+
+#menupencari ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menupencari li{
+    display: inline;
+}

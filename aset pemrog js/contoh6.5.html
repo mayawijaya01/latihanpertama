@@ -1,0 +1,21 @@
+<html>
+  <head><title>Skop Fungsi</title>
+    <script type="text/javascript">
+      var nama="Kusumawardani"; // Variabel global
+      var kota="Mataram";
+      function identitas(){
+        var nama="Kristof"; // Variabel lokal
+        var kota="Siantar";
+        alert("Di dalam fungsi, nama menjadi " + nama +
+          " dan kota menjadi "+ kota);
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      identitas(); // Pemanggilan fungsi
+      alert("Di luar fungsi, nama menjadi "+ nama +
+        " dan kota menjadi " + kota);
+    </script>
+  </body>
+</html>

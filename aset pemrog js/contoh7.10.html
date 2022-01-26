@@ -1,0 +1,28 @@
+<html>
+  <head><title>Objek-Objek Sendiri</title>
+    <script type = "text/javascript">
+      function buku(judul, pengarang, penerbit){
+        this.judul = judul;
+        this.pengarang = pengarang;
+        this.penerbit = penerbit;
+        this.tampil=tampil; // Mendefinisikan sebuah metode
+      }
+      function tampil(obj, nama){
+        // Fungsi untuk menampilkan properti objek
+        var hasil = "";
+        for (var prop in obj){
+          hasil += nama + "." + prop + " = " +
+          obj[prop] + "<br />";
+        }
+        return hasil;
+      }
+    </script>
+  </head>
+  <body bgcolor="lightblue">
+    <script type="text/javascript">
+      bukuKu = new buku("Pemrograman JavaScript", "RH. Sianipar",
+        "Penerbit Hebat");
+      document.write("<br /><b>" + bukuKu.tampil(bukuKu, "bukuKu"));
+    </script>
+  </body>
+</html>

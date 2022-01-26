@@ -1,0 +1,21 @@
+form{
+    border: solid 2px blue;
+}
+
+fieldset{
+    background-color:violet;
+}
+
+fieldset p{
+    margin-left: 10px;
+}
+
+p{
+    color: black;
+    font-style: normal;
+}
+
+label{
+    float: left;
+    width: 100px;
+}

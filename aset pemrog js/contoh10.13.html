@@ -1,0 +1,28 @@
+<html>
+  <head><title>Sebuah form HTML dan katakunci this dan Event Handler</title>
+    <script type="text/javascript">
+      function periksaForm(form1){
+        if(form1.nama_anda.value == ""){
+          // Memeriksa string kosong
+          alert("Silahkan masukkan nama Anda");
+          return(false);
+        }
+        else{
+          return(true);
+        }
+      }
+    </script>
+  </head>
+  <body><b>
+    <form method="post"
+          action="http://localhost/cgi-bin/periksa.pl"
+          onSubmit="return periksaForm(this)"><p>
+      <big><p>
+      Ketikkan nama Anda di sini:
+      <input type="text" name="nama_anda" size="50" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>

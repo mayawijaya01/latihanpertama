@@ -1,0 +1,30 @@
+<html>
+  <head><title>Bekerja Dengan Literal Objek</title>
+    <script type="text/javascript">
+      var tentara = {
+        nama: undefined,
+        pangkat: "kapten",
+        gambar: "kapten.jpg",
+        istrahatGrak: function() {
+          alert("Pasukan, istrahat graaaaak!.");
+        },
+        tegakGrak: function() {
+          alert("Pasukan, tegak graaaaak!");
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <big>
+    <script type="text/javascript">
+      tentara.nama="Sartono"; // Menugaskan nilai kepada objek
+      // properti
+      document.write("Nama tentara adalah ", tentara.nama,".<br />");
+      document.write(tentara.nama+ " memiliki pangkat ", tentara.pangkat,".<br />");
+      document.write("<img src='"+tentara.gambar+"'>");
+      tentara.istrahatGrak(); //memanggil metode-metode objek
+      tentara.tegakGrak();
+    </script>
+    </big>
+  </body>
+</html>

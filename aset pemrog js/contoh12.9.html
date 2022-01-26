@@ -1,0 +1,42 @@
+<html>
+  <head><title>Event-Event Mouse</title>
+    <script type="text/javascript">
+      var kounter=0;
+      function ingatkan_saya(){
+        alert("Saya keluar dari sini!");
+        window.close();
+      }
+      function jejak_perpindahan(){
+        kounter++;
+        if(kounter==1){
+          alert(kounter + " perpindahan mouse sejauh ini!");
+        }
+        else{
+          alert(kounter + " perpindahan mouse sejauh ini!");
+        }
+      }
+    </script>
+  </head>
+  <body bgColor="CCFF00" onDblClick="ingatkan_saya()";>
+    <p><font face="arial" size=3>
+    Klik ganda di mana saja pada halaman ini untuk keluar!
+    </p><p>
+    Ketika mouse berada di atas link, event akan dipicu.
+    <a href="#" onMouseOver="alert('Event:onMouseOver');" />
+    onMouseOver
+    </a></p><p>
+    Ketika mouse menjauh dari link, sebuah event akan dipicu.
+    <a href="#" onMouseOut="alert('Event:onMouseOut');" />
+    onMouseOut
+    </a></p><p>
+    Ketika mouse masuk ke dan keluar dari tombol, sebuah fungsi<br />
+    dipanggil untuk menjejak berapa kali mouse telah menyentuh
+    tombol.
+    <form>
+      <input type="button"
+             value="onMouseMove"
+             onMouseMove="jejak_perpindahan();" />
+    </form>
+    </p>
+  </body>
+</html>

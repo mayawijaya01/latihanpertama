@@ -1,0 +1,30 @@
+<html>
+  <head><title>Event handler onSubmit dan Form</title>
+    <script type="text/javascript">
+      function siapKirim(){
+        if(confirm("Apakah Anda siap untuk mengirim form? ")){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="http://cgi-bin/ujiform.cgi"
+          method="post"
+		  onSubmit="return(siapKirim());">
+      Masukkan id pengguna:
+      <input type="text"
+             name="kotakteks"
+             value="" />
+      <br />
+      Ketikkan password Anda:
+      <input type="password"
+             name="rahasia" />
+      <p></p>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>

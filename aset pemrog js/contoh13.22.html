@@ -1,0 +1,46 @@
+<html>
+  <head><title>Menu Drop-Down</title>
+    <link rel="stylesheet" href="dropdown.css"type="text/css"/>
+    <script type="text/javascript">
+      function tampilMenu(id){
+        var ref = document.getElementById(id);
+        ref.style.visibility = "visible"; 
+      }
+      function sembunyiMenu(id){
+        var ref = document.getElementById(id);
+        ref.style.visibility = "hidden"; 
+      }
+    </script>
+  </head>
+  <body bgColor="lightblue">
+    <table width="350" border="2" bgcolor="lightgreen"
+           cellspacing="1" cellpadding="2">
+      <tr>
+        <td width="100">
+          <div id="menu" onClick="sembunyiMenu('menu');">
+            <a class="menu" href="#">Indonesia</a><br />
+            <a class="menu" href="#">Dunia</a><br />
+            <a class="menu" href="#">Lokal </a><br />
+          </div>
+          <a href="#" onMouseOver="tampilMenu('menu');">Berita</a>
+        </td>
+        <td width="100">
+          <div id="menu2" onClick="sembunyiMenu('menu2');">
+            <a class="menu" href="#">Bola</a><br />
+            <a class="menu" href="#">Renang</a><br />
+            <a class="menu" href="#>">Tenis</a><br />
+          </div>
+          <a href="#" onMouseOver="tampilMenu('menu2');">Olahraga</a>
+        </td>
+        <td width="100">
+          <div id="menu3" onClick="sembunyiMenu('menu3');">
+            <a class="menu"href="http://www.imdb.com/">Film</a><br />
+            <a class="menu" href="#">Bioskop</a><br />
+            <a class="menu" href="#>">DVD</a><br />
+          </div>
+          <a href="#"onMouseOver="tampilMenu('menu3');">Hiburan</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

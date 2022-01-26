@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Objek location</title>
+    <script type="text/javascript">
+      function muatHalaman(alamatURL){
+        parent.frames[1].location.href = alamatURL;
+      }
+    </script>
+  </head>
+  <body bgcolor="F8C473">
+  <big>
+    <form name="form1" id="form1">
+      <input type="button"
+        value="Amazon"
+        onClick="muatHalaman('http://amazon.com');">
+      <input type="button"
+        value="Kompas"
+        onClick="muatHalaman('http://kompas.com');">
+      <input type="button"
+        value="Biobses"
+        onClick="muatHalaman('http://biobses.com');">
+    </form>
+    </big>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head><title>Menciptakan Subkelas</title>
+    <script type="text/javascript">
+      function Hewan(){ // Kelas Basis
+        var pemilik = "RH. Sianipar";
+        var gender = undefined;
+        this.setPemilik = function(who) { pemilik=who;};
+        this.getPemilik = function(){ return pemilik; }
+        this.setGender = function(seks) { gender=seks; }
+        this.getGender = function(){ return gender; }
+      }
+      function Kucing(){} //konstruktor subkelas
+        Kucing.prototype = new Hewan();
+        Kucing.prototype.constructor=Kucing;
+        Kucing.prototype.bicara=function bicara(){
+        return("Meong...");
+      };
+      function Anjing(){}; //konstruktor subkelas
+        Anjing.prototype= new Hewan();
+        Anjing.prototype.constructor=Anjing;
+        Anjing.prototype.bicara = function bicara(){
+        return("Guk...");
+      };
+    </script>
+  </head>
+  <body><big>
+    <script>
+      var kucing = new Kucing;
+      var anjing = new Anjing;
+      kucing.setPemilik("Robert");
+      kucing.setGender("Betina");
+      anjing.setGender("Jantan");
+      document.write("Kucing "+ kucing.getGender()+ " dimiliki oleh "
+        + kucing.getPemilik() +" dan ia selalu berkata " + kucing.bicara());
+      document.write("<br>Anjing "+ anjing.getGender() + " " +
+        " dimiliki oleh " + anjing.getPemilik() + " dan ia selalu berkata "
+        + anjing.bicara());
+    </script>
+    </big>
+  </body>
+</html>

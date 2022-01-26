@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Objek history</title>
+    <script type="text/javascript">
+      function muatHalaman(alamatURL){
+        parent.frames[1].location.href = alamatURL;
+      }
+    </script>
+  </head>
+  <body bgcolor="F8C473">
+    <font size="+1" face=arial,helvetica>
+    <form name="form1">
+      <input type="button"
+        value="Amazon"
+        onClick="muatHalaman('http://amazon.com');" />
+      <input type="button"
+        value="Kompas"
+        onClick="muatHalaman('http://kompas.com');" />
+      <input type="button"
+        value="Biobses"
+        onClick="muatHalaman('http://biobses.com');" />
+    </form>
+    <form name="form2" id="form2">
+      <input type="button"
+        value="mundur"
+        onClick="JavaScript: history.go(-1);">
+      <input type="button"
+        value="maju"
+        onClick="JavaScript: history.go(1);">
+    </form>
+    </font>
+  </body>
+</html>

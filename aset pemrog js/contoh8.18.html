@@ -1,0 +1,18 @@
+<html>
+  <head><title>Menghitung Sampai Tahun Baru</title></head>
+  <body bgColor="#00FF99">
+    <font face="arial" size=5 color=red>
+    <script type="text/javascript">
+      var hariIni = new Date();
+      var tahunPenuh = hariIni.getFullYear();
+      var waktuDepan = new Date("December 31, "+ tahunPenuh);
+      var selisih = waktuDepan.getTime() - hariIni.getTime();
+      // Jumlah milidetik
+      var hari = Math.floor(selisih / (1000 * 60 * 60 * 24 )) + 1;
+      // Konversi ke hari
+      var str="Tinggal <u>" + hari + "</u> hari lagi sampai tahun baru!";
+      document.write(str+"<br />");
+    </script>
+    </font>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+  <head><title>Fungsi sebagai Variabel</title>
+    <script type="text/javascript">
+      var salam=function (pengunjung){
+        // Tubuh fungsi ditugaskan kepada salam
+        pesan="Salam dan sukses untuk Anda, " + pengunjung + "! ";
+        return pesan;
+      }
+    </script>
+  </head>
+  <body>
+    <big>
+    <script type="text/javascript">
+      var hormat=salam("Robert");
+      document.write(hormat + "<br />");
+      var hallo = salam;
+        // Variabel fungsi ditugaskan kepada variabel lain
+      var selamatDatang = salam;
+      document.write(hallo("Anak Muda") +"<br />");
+        // Memanggil fungsi
+      document.write(selamatDatang("Tuanku") +
+        " Apa kabar Anda? </br />");
+    </script>
+    </big>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+  <head><title>Event onReset</title>
+    <script type="text/javascript">
+      function resetSemua(){
+        if(confirm("Apakah Anda ingin mereset form menjadi"
+          + " nilai-nilai defaultnya? ")){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="http://cgi-bin/ujiform.cgi"
+          method="post"
+          onReset="return resetSemua();" />
+      Masukkan id Anda:
+      <input type="text"
+             name="kotakteks"
+             value="Nama? "
+             id="kotakteks" />
+      <p>Ketikkan password Anda:
+      <input type="password"
+             name="rahasia"
+             id="rahasia" />
+      </p><p>
+      <input type="submit"/>
+      <input type="reset"
+             value="Reset Form"/>
+      </p>
+    </form>
+  </body>
+</html>

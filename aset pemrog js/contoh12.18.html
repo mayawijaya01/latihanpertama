@@ -1,0 +1,46 @@
+<html>
+  <head><title>Periksa!</title>
+    <script type="text/javascript">
+      function okForm(form){
+        if (form.terima.checked == true){
+          return true;
+		}
+        else{
+          alert("Silahkan periksa kotak!");
+            form.terima.focus();
+            return false;
+	    }
+      }
+    </script>
+  </head>
+  <body bgcolor="#CCCCFF">
+    <font face="arial,helvetica" size=2>
+    <form action="http://localhost/buku/prosessform.php"
+          method="post"
+          onSubmit="return okForm(this)">
+      <b>Nama Anda:</b><br />
+      <input type="text" name="namaanda">
+      <p>
+      <b>Apa yang Anda beli hari ini?</b><br />
+      </p>
+      <input type="radio" name="pilihan"
+             value="burger">Burger, kentang, dan cocacola
+      <br />
+      <input type="radio" name="pilihan"
+             value="veggie">Sayur dan air mineral
+      <p>
+      <b>Terimakasih atas pesanan Anda.
+         Periksa pesanan Anda.</b></p>
+      <input type="checkbox"
+             name="terima"
+             value="0" />
+      <input type="submit"
+             value="Silahkan periksa" />
+      </p>
+      <input type="button"
+             value="Kembali ke Beranda"
+             onClick="window.location.replace('http://localhost';)">
+      </font>
+    </form>
+  </body>
+</html>

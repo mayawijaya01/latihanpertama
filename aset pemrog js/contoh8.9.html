@@ -1,0 +1,21 @@
+<html>
+  <head><title>Array Asosiatif</title></head>
+  <body>
+    <p style="font-size:150%">
+    <script type="text/javascript">
+      var mahasiswa=new Array();
+      mahasiswa["Nama"]="Rico Chandra"; //satu kunci, satu nilai
+      mahasiswa["Matakuliah"]=new Array("Matematika","Bahasa Inggris", "Pertanian");
+      mahasiswa["Telepon"]=new Array("415-333-1234","530-345-5432");
+      document.write("Nama mahasiswa: " + mahasiswa["Nama"] +
+        ".<br />");
+      document.write("Matakuliah: " + mahasiswa["Matakuliah"] +
+        ".<br />");
+      document.write("Matakuliah Favorit: "+
+        mahasiswa["Matakuliah"][2] + ".<br />");
+      document.write("Nomor HP: " +
+        mahasiswa["Telepon"][0] + ".<br />");
+    </script>
+    </p>
+  </body>
+</html>

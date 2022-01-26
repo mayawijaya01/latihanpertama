@@ -1,0 +1,45 @@
+<html>
+  <head><title>Event Handler onSubmit</title>
+    <script type="text/javascript">
+      function popUp(){
+        jendelaBaru=window.open('','NewWin','toolbar=no,status=no,width=500,height=200');
+        jendelaBaru.document.write("<body bgcolor='yellow'><h3>Data Form</h3>");
+        jendelaBaru.document.write("<b>Nama Anda:</b> " +
+          document["form1"].namastring.value);
+        jendelaBaru.document.write("<br /><b>Alamat Anda: </b></body>"
+           +document["form1"].alamat.value);
+        jendelaBaru.document.close();
+      }
+    </script>
+  </head>
+  <body bgcolor="yellow">
+    <form name="form1" onSubmit="return popUp();">
+    <p>
+    <table>
+      <tr>
+        <td>
+          <b>Ketikkan Nama Anda:</b>
+        </td>
+        <td>
+          <input type="text"
+                 name="namastring"
+                 size="50">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>Ketikkan Alamat Anda:</b>
+        </td>
+        <td>
+          <input type="text"
+                 name="alamat"
+                 size="80">
+        </td>
+      </tr>
+    </table>
+    <p>
+    <input type="submit" value="Kirim Form" />
+    <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>

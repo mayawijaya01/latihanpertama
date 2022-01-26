@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="=id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menggunakan Tabel</title>
+    <link rel="stylesheet" type="text/css" href="tabel5.css"/>
+</head>
+<body>
+<form method="post" action="entri.php">
+    <table
+        summary="Tabel dipakai untuk memasukan data penjualan">
+        <caption class="kelabu">Data Penjualan</caption>
+        <thead>
+        <tr class="kelabu">
+            <th>Area</th>
+            <th>2008</th>
+            <th>2009</th>
+            <th>2010</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td class="kelabu">Sumatera</td>
+            <td>
+                <input type="text" name="sumatera2008" id="sumatera2008" class="rataKanan"/>
+            </td>
+            <td>
+                <input type="text" name="sumatera2009" id="sumatera2009" class="rataKanan"/></td>
+            <td>
+                <input type="text" name="sumatera2010" id="sumatra2010" class="rataKanan"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="kelabu">Kalimantan</td>
+            <td>
+                <input type="text" name="Kalimantan2008" id="Kalimantan2008" class="rataKanan"/>
+            </td>
+            <td>
+                <input type="text" name="Kalimantan2009" id="Kalimantan2009" class="rataKanan"/>
+            </td>
+            <td>
+                <input type="text" name="Kalimantan2010" id="Kalimantan2010" class="rataKanan"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="kelabu">Jawa</td>
+            <td>
+                <input type="text" name="jawa2008"
+                    id="jawa2008" class="rataKanan"/>
+            </td>
+            <td>
+                <input type="text" name="jawa2009"
+                       id="jawa2009" class="rataKanan"/>
+            </td>
+            <td>
+                <input type="text" name="jawa2010"
+                       id="jawa2010" class="rataKanan"/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <input type="submit" name="tombolsimpan"
+        id="tombolSimpan" value="simpan"/>
+</form>
+</body>
+</html>

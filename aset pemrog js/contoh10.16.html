@@ -1,0 +1,36 @@
+<html>
+  <head><title>Menampilkan Masukan Form</title>
+    <script type="text/javascript">
+      function tampilForm(formku) {
+        JenBaru=window.open('','','width=300,height=200');
+        nama_masukan="<b>Nama Anda: " + formku.nama_user.value
+          + "</b><br />";
+        JenBaru.document.write(nama_masukan);
+        masukan_telp="<b>No Telp Anda: " + formku.telp_user.value
+          + "</b><br />";
+        JenBaru.document.write(masukan_telp);
+      }
+      function tutup_jendela(){
+        JenBaru.window.close();
+      }
+    </script>
+  </head>
+  <body><hr><h3>Menampilkan data form pada jendela kecil</h2><p>
+    <form name="ujiform">
+    Silahkan masukkan nama Anda: <br />
+    <input type="text" size="50" name="nama_user" />
+    <p>
+    Silahkan masukkan no telp Anda: <br />
+    <input type="text" size="30" name="telp_user" />
+    </p><p>
+    <input type="button"
+           value="tampil data form"
+           onClick="tampilForm(this.form)"; />
+    </form>
+    </p>
+    <big>
+    <a href="JavaScript:void(0)" onClick="tutup_jendela()">
+    Klik di sini untuk menutup jendela kecil</a>
+    </big>
+  </body>
+</html>

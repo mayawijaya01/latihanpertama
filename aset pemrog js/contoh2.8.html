@@ -1,0 +1,19 @@
+<html>
+  <head><title>Menggunakan katakunci const</title>
+    <script type="text/javascript">
+      const SIANG = 12;
+      const PANAS = 32; // Tidak dapat diubah
+    </script>
+  </head>
+  <body bgcolor="silver">
+    <big>
+      <script type="text/javascript">
+        document.write("Suhu Celcius " + PANAS + ".<br />");
+        PANAS = 32 + 10;
+        SIANG = SIANG + " siang";
+        document.write("Membuat lebih panas " + PANAS + ".<br />");
+        document.write("Suhu sekarang ", SIANG, ".<br />");
+      </script>
+    </big>
+  </body>
+</html>

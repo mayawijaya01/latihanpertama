@@ -1,0 +1,32 @@
+<html>
+  <head><title>Katakunci with</title>
+    <script type = "text/javascript">
+      function buku(judul, pengarang, penerbit){
+        this.judul = judul; // Properti-properti
+        this.pengarang = pengarang;
+        this.penerbit = penerbit;
+        this.tampil = tampil; // Mendefinisikan sebuah metode
+      }
+      function tampil(){
+        with(this){ // Katakunci with dengan this
+          var info = "Judul: " + judul;
+          info += "\nPengarang: " + pengarang;
+          info += "\nPenerbit " + penerbit;
+          alert(info);
+        }
+      }
+    </script>
+  </head>
+  <body bgcolor="lightblue">
+    <script type = "text/javascript">
+      var bukuAnak = new buku("A Child's Garden of Verses",
+        "Robert Lewis Stevenson",
+        "Little Brown");
+      var bukuDewasa = new buku("War and Peace",
+        "Leo Tolstoy",
+        "Penguin Books");
+      bukuAnak.tampil(); // Memanggil metode untuk buku anak
+      bukuDewasa.tampil(); // Memanggil metode untuk buku dewasa
+    </script>
+  </body>
+</html>

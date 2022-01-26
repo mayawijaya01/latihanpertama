@@ -1,0 +1,20 @@
+<html>
+  <head><title>Deteksi MIME</title></head>
+  <body bgcolor="lightgreen">
+    <h3><u>Tipe-Tipe MIME--Firefox</u></h3>
+    <b>
+    <script type="text/javascript">
+      for ( var i=0;i < navigator.mimeTypes.length; i++){
+        if(navigator.mimeTypes[i].enabledPlugin != null){
+          document.write ("<br /><font size='+1'>"
+            + navigator.mimeTypes[i].type+"<br />");
+          document.write("<font size='-1'>"+ "Nama Plugin Aktif: <em>"
+            + navigator.mimeTypes[i].enabledPlugin.name+"<br />");
+          document.write("</em>Penjelasan: "+ "<em>"
+            + navigator.mimeTypes[i].description+"<br /></em>Suffixes: "
+            + "</em>"+ navigator.mimeTypes[i].suffixes+"<br />");
+        }
+      }
+    </script>
+  </body>
+</html>

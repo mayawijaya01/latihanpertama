@@ -1,0 +1,67 @@
+</html>
+  <head><title>Slideshow Planet</title>
+    <script type="text/javascript">
+      var timeout;
+      var langkah=0
+      var citramana=0;
+      var planet=new Array();
+      function praMuatCitra(){
+        planet[0]=new Image();
+        planet[0]="/citra/Jupiter.jpg";
+        planet[1]=new Image();
+        planet[1]="/citra/Neptune.jpg";
+        planet[2]=new Image();
+        planet[2]="/citra/Earth.jpg";
+        planet[3]=new Image();
+        planet[3]="/citra/Venus.jpg";
+        planet[4]=new Image();
+        planet[4]="/citra/Mars.jpg";
+      }
+      function slideShow(){
+        document.images["gambar_planet"].src=planet[langkah];
+        citramana=langkah;
+        if (langkah < planet.length){
+          langkah++;
+        }
+        else{
+          langkah=0;
+        }
+        setTimeout("slideShow()",1800);
+      }
+      function slideLink(){
+        switch(citramana){
+          case 0:
+            window.location=
+              "http://www.nasa.gov/worldbook/jupiter_worldbook.html";
+            break;
+          case 1:
+            window.location=
+              "http://www.aerospaceguide.net/planet/planetneptune.html"
+            break;
+          case 2:
+            window.location=
+              "http://www.windows.ucar.edu/tour/link=/earth/earth.html";
+            break;
+          case 3:
+            window.location=
+              "http://csep10.phys.utk.edu/astr161/lect/venus/venus.html";
+            break;
+          case 4:
+            window.location=
+              "http://www.nasa.gov/worldbook/mars_worldbook.html";
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body bgColor="black" onLoad = "praMuatCitra(); slideShow()">
+    <font color="white">
+    <big>
+    Klik pada Planet<br /><br />
+    <a href="JavaScript:slideLink()">
+    <img src="Jupiter.bmp" name="gambar_planet"
+         border="0" width="120" /></a>
+    </big>
+    </font>
+  </body>
+</html>

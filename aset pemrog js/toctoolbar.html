@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Menu Bar</title>
+    <meta http-equiv="Content-Type" content="text/html;
+     charset=iso-8859-1">
+    <script type="text/javascript">
+      var urlKu;
+      function bukaSitus(url){
+        parent.main.location = url;
+        urlKu=url;
+      }
+      function sembunyikan(){
+        if ( ! urlKu){
+          parent.location = "tocmain.html";}
+        else{
+          parent.location=urlKu; // Memaksa halaman ini ke lokasi parent
+        }
+      }
+    </script>
+  </head>
+  <body bgcolor="#FFFFFF">
+    <p><a href="JavaScript:bukaSitus('tocmain.html')">Beranda</a><p>
+    <p><a href="JavaScript:bukaSitus('http://kompas.com');">
+      Halaman 1</a></p>
+    <p><a href="JavaScript:bukaSitus('http://biobses.com');">
+      Halaman 2</a></p>
+    <p><a href="JavaScript:bukaSitus('http://detik.com');">
+      Halaman 3</a></p>
+    <p><a href="JavaScript:sembunyikan();">Sembunyikan Menu</a><p>
+  </body>
+</html>

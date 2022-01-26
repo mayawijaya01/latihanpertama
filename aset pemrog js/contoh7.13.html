@@ -1,0 +1,26 @@
+<html>
+  <head><title>Properti Objek</title>
+    <script type="text/javascript">
+      function Buku(judul, pengarang){
+        this.judul =judul;
+        this.pengarang=pengarang;
+      }
+    </script>
+  </head>
+  <body bgColor="#EOFFFF">
+    <big>
+    <script>
+      var buku1 = new Buku("Kidnapped","R.L.Stevenson");
+      var buku2 = new Buku("Tale of Two Cities", "Charles Dickens")
+      Object.prototype.kategori="Fiction";
+      Buku.prototype.penerbit = "Penguin Books";
+      document.write(buku1.judul + " diterbitkan oleh "+
+      buku1.penerbit + " dengan kategori " + buku1.kategori +
+        ".<br />");
+      document.write(buku2.judul + " diterbitkan oleh "+
+        buku2.penerbit + " dengan kategori " + buku1.kategori +
+        ".<br />"); </script>
+    </script>
+    </big>
+  </body>
+</html>

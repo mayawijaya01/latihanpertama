@@ -1,0 +1,32 @@
+<html>
+  <head><title>Pramuat Citra</title></head>
+    <script type="text/javascript">
+      RumahCitra=new Array(3);
+      for(var i=0; i<3; i++){
+        RumahCitra[i]=new Image();
+      }
+      RumahCitra[0].src="baby1.jpg";
+      RumahCitra[1].src="baby2.jpg";
+      RumahCitra[2].src="baby3.jpg";
+      function acakKu(){
+        var n=RumahCitra.length - 1;
+        var angka_acak=Math.floor(Math.random() * (n + 1));
+        document.images["tampil"].src = RumahCitra[angka_acak].src;
+      }
+    </script>
+  </head>
+  <body bgcolor="cornflowerblue"><center>
+    <h2>&nbsp;&nbsp;Ini Bayi Anda?</h2>
+    <img name="tampil" id="tampil"
+         src="baby.jpg"
+         border=5
+         width="200" height="250" />
+    <p>
+    <form>
+      <input type="button"
+             value="Klik di sini untuk Melihat Gambar Bayi"
+             onClick="acakKu()" />
+      </form>
+    </center>
+  </body>
+</html>

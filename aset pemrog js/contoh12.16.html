@@ -1,0 +1,17 @@
+<html>
+  <head><title>Event Handler onChange</title></head>
+  <body>
+    <form>
+      Silahkan masukkan nilai Anda:
+      <input type="text" onChange="
+        nilai=parseInt(this.value); //Konversi ke integer
+        if(nilai < 0 || nilai > 100){
+          alert('Silahkan masukkan sebuah nilai antara 0 dan 100');
+        }
+        else{
+          confirm('Apakah '+ nilai + ' tepat?');
+        }
+      " />
+    </form>
+  </body>
+</html>

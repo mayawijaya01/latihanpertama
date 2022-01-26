@@ -1,0 +1,33 @@
+<html>
+  <head><title>Menu Drop Down</title>
+    <script type="text/javascript">
+      function tampilkan(form){
+        var pilihan="";
+        for (i=0;i< form.liburan.options.length;i++){
+          if( form.liburan.options[i].selected == true){
+            pilihan += form.liburan.options[i].text+"\n";
+          }
+        }
+        alert(pilihan);
+      }
+    </script>
+  </head>
+  <body bgcolor="lightgreen">
+    <font face="arial">
+    <b>
+    <form name="form1" onSubmit="tampilkan(this);" />
+      Kemana Anda akan pergi? <br />
+      <select name="liburan" size=4 multiple>
+        <option>Senggigi</option>
+        <option>Danau Toba</option>
+        <option>Bali</option>
+        <option>Solo</option>
+      </select>
+      <p></p>
+      </b>
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    </font>
+  </body>
+</html>

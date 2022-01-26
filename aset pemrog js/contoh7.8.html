@@ -1,0 +1,35 @@
+<html>
+  <head><title>Literal Objek</title>
+    <script type = "text/javascript">
+      var Mobil = { // Menciptakan sebuah objek Mobil
+        pembuat:undefined,
+        tahun:2013,
+        harga:undefined,
+        pemilik:{
+          nama: "RH. Sianipar",
+          no_sel: "222-222-2222",
+          alamat:{jalan: "Medan",
+            kota: "Siantar",
+            propinsi: "SUMUT"
+          }
+        },
+        dealer: "Honda",
+        tampil: function() {detil="Pembuat: "+Mobil.pembuat+"\n";
+          detil += "Tahun: "+Mobil.tahun+"\n";
+          detil += "Harga: Rp."+Mobil.harga+"\n";
+          detil += "Pemilik: "+
+          Mobil.pemilik.nama+"\n";
+          alert(detil);
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+       Mobil.pembuat="Honda Civic"; // Menugaskan nilai
+       Mobil.tahun=2014; // Memperbarui tahun
+       Mobil.harga=300000000;
+       Mobil.tampil();
+    </script>
+  </body>
+</html>

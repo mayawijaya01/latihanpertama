@@ -1,0 +1,26 @@
+<html>
+  <head><title>Metode focus() dan blur()</title>
+    <script type="text/javascript">
+      function jendelaBaru(){
+        winObj=window.open("spring1.jpg", "sakura","width=650,height=200,resizable=yes, scrollbars=yes,location=yes");
+        winObj.moveTo(0,0); // Menggeser ke pojok kiri layar
+        winObj.focus(); // Jendela baru mendapat fokus
+        //windObj.blur();
+      }
+      function tutupJendela(){
+        winObj.close(); // Tutup jendela baru
+      }
+    </script>
+  </head>
+  <body bgColor="lightgreen">
+    <h2>Saat Bunga Sakura Mekar</h2>
+    <form>
+      <input type=button
+             value="Buka Jendela"
+             onClick="JavaScript:jendelaBaru();" />
+      <input type=button
+             value="Tutup Jendela"
+             onClick="JavaScript:tutupJendela();" />
+      </form>
+  </body>
+</html>

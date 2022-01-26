@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Konstruksi Perulangan</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      while(true) {
+        var nilai=eval(prompt("Berapa nilai Anda? ",""));
+        if (nilai < 0 || nilai > 100) {
+          alert("Pilihan tak-sah!");
+          continue; // Kembali ke atas loop
+        }
+        if(nilai > 89 && nilai < 101)
+          {alert("Wow! Anda mendapatkan nilai A!");}
+        else if (nilai > 79 && nilai < 90)
+          {alert("Anda mendapatkan nilai B");}
+        else if (nilai > 69 && nilai < 80)
+          {alert("Anda mendapatkan nilai C");}
+        else if (nilai > 59 && nilai < 70)
+          {alert("Anda mendapatkan nilai D");}
+        else {alert("Belajar lebih keras. Anda gagal.");}
+        jawaban=prompt("Apakah Anda ingin memasukkan nilai lain?","");
+        if(jawaban != "ya"){
+          break; // Keluar dari loop ke baris 12
+        }
+      }
+    </script>
+  </body>
+</html>

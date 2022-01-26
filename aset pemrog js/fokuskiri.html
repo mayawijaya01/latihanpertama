@@ -1,0 +1,19 @@
+<html>
+  <head><title>Frame Kiri</title>
+    <script type="text/javascript">
+      function fokus_saya(){
+        document.bgColor="pink"; // dokumen aktuil adalah frame kiri
+        window.status="fokus framekiri";
+      }
+      function defokus_saya(){
+        parent.kiri.document.bgColor="yellow"; // Cara lain untuk mereferensi
+        window.status="fokus framekanan"; // Lihat status bar
+      }
+    </script>
+  </head>
+  <body onFocus="fokus_saya()"  
+        onBlur="defokus_saya()"
+        bgColor="lightgreen">
+    <image src="kristian.gif">
+  </body>
+</html>

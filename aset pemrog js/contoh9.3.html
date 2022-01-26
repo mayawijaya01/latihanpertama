@@ -1,0 +1,17 @@
+<html>
+  <head><title>Jumlah Plug-in Terinstal</title></head>
+  <body>
+    <h2>Jumlah Plug-in Terinstal</h2>
+    <big>
+    <script type="text/javascript">
+      // No plug-ins for Windows IE. Firefox uses this program.
+      var jumlah_plugin = navigator.plugins.length;
+      for (var i=0; i < jumlah_plugin; i++) {
+        var nomor=i+1;
+        document.write("<font color=red>Plug-in No." + nomor + "- </font>"+navigator.plugins[i].name+" <br/>[Location: " + navigator.plugins[i].filename + "]<p>");
+      }
+      alert("\nAnda memiliki " + nomor + " plug-in terinstal!")
+    </script>
+    </big>
+  </body>
+</html>

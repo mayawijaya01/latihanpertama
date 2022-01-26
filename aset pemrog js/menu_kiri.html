@@ -1,0 +1,24 @@
+<html>
+  <head><title>Frame Kiri</title>
+  <!--File HTML ini dinamai: menu_kiri.html -->
+    <script type="text/javascript">
+      function setWarnaLatar(warna){
+        parent.frames[1].document.bgColor=warna;
+        // Atau gunakan nama frame: parent.lframe.document.bgColor
+      }
+    </script>
+  </head>
+  <body bgColor="white">
+    <h3>
+      Pilih sebuah warna:
+      <br />
+      <a href="JavaScript:setWarnaLatar('red')">merah</a>
+      <br />
+      <a href="JavaScript:setWarnaLatar('yellow')">kuning</a>
+      <br />
+      <a href="JavaScript:setWarnaLatar('green')">hijau</a>
+      <br />
+      <a href="JavaScript:setWarnaLatar('blue')">biru</a>
+    </h3>
+  </body>
+</html>

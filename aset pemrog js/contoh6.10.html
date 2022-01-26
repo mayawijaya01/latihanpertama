@@ -1,0 +1,38 @@
+<html>
+  <head><title="Deret Fibonacci"</title>
+    <script type="text/javascript">
+      var kounter = 0;
+      function fib(angka){
+        kounter++;
+        switch(angka){
+          case 0 :
+            return(0);
+			break;
+		  case 1:
+            return(1);
+            break;
+          default:
+            return(fib(angka - 1) + fib( angka - 2 ));
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <big>
+    <div align = "center">
+    <table border="1">
+      <tr>
+      <script type = "text/javascript">
+        for( n=0; n < 20; n++){
+          nilai = fib(n);
+          document.write("<td>" + nilai + "</td>");
+        }
+        alert("Fungsi memanggil dirinya sendiri sebanyak "+ kounter + " kali!!");
+      </script>
+      </tr>
+    </table>
+    </div>
+    </big>
+  </body>
+</html>

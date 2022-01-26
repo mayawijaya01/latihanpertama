@@ -1,0 +1,8 @@
+div{border: solid;
+    background-color: salmon;
+    margin: 2px;}
+
+.divkhusus{position: fixed;
+    left: 40px;
+    top: 75px;
+}

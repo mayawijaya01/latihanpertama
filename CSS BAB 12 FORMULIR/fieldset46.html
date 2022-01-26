@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mengelompokkan objek dengan fieldset</title>
+    <link rel="stylesheet" type="text/css" href="fieldset4.css"/>
+</head>
+<body>
+<h1>Formulir Pendaftaran</h1>
+<form method="post" action="testing.html">
+    <fieldset>
+        <legend>Data Pribadi</legend>
+        <p>
+            <label for="namaLengkap">Nama:</label>
+            <input type="text" name="namaLengkap" id="namaLengkap"
+            size="35" maxlength="35"/>
+        </p>
+
+        <p>
+            <label for="alamat">Alamat:</label>
+            <input type="text" name="alamat" id="alamat"
+            size="80" maxlength="80"/>
+        </p>
+
+        <p>
+            <label for="email">alamat email:</label>
+            <input type="email" name="email" id="email"/>
+        </p>
+
+        <p>
+            <label for="password1">Password:</label>
+            <input type="password" name="password1" id="password1"/>
+        </p>
+
+        <p>
+            <label for="password2">Password konfirmasi:</label>
+            <input type="password" name="password2" id="password2"/>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Info Lain-lain</legend>
+         <p>
+             <label for="usia">Usia:</label>
+            <input type="text" name="usia" id="usia"
+            size="5" maxlength="5"/>
+         </p>
+
+         <p>
+             <label for="Pekerjaan">Pekerjaan:</label>
+             <input type="text" name="Pekerjaan" id="Pekerjaan"/>
+         </p>
+
+    </fieldset>
+</form>
+</body>
+</html>

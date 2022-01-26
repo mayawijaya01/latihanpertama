@@ -1,0 +1,27 @@
+<html>
+  <head><title>Batang Progres</title>
+    <script type="text/javascript">
+      function progres(){
+        // Menetapkan lebar dari citra setiap .5 detik
+        if(document.images["bar"].width < 500){
+          document.images["bar"].width += 5;
+          document.images["bar"].height = 10;
+          // Mempertahankan tinggi agar citra tidak bertambah tinggi
+          // ketika citra diperlebar.
+        }
+        else{
+          clearInterval(pewaktu);
+        }
+      }
+      var pewaktu;
+      window.onload = function(){
+        pewaktu = setInterval("progres();",500);
+        // Citra ditarik setiap .5 detik
+      }
+    </script>
+  </head>
+  <body bgColor="aquamarine">
+    <img src="blackbar.bmp" height="10" name="bar"/>
+    <p>Amati Progres</p>
+  </body>
+</html>

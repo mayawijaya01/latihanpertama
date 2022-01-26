@@ -1,0 +1,19 @@
+<html>
+  <head><title>Animasi</title>
+    <script type="text/javascript">
+      var gbr;
+      function animasi(yangmana){
+        yangmana %= gbr.length;
+        document.images["jalan"].src=gbr[yangmana];
+        window.setTimeout("animasi(" + (yangmana + 1)+");",500);
+      }
+      window.onload=function(){
+        gbr=new Array( "0.png","1.png","2.png","3.png","4.png");
+        animasi(0);
+      }
+    </script>
+  </head>
+  <body bgcolor=lightgreen>
+    <img src="0.png" name="jalan" />
+  </body>
+</html>

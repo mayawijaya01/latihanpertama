@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      var hariIni = new Date();
+      var tahun=hariIni.getFullYear();
+      var waktuDepan = new Date("December 31, " + tahun);
+      var selisih = waktuDepan.getTime() - hariIni.getTime();
+      // Jumlah milidetik
+      var hari =Math.floor(selisih / (1000 * 60 * 60 * 24 ));
+      // Konversi ke hari
+      var str=
+        "Tinggal " + hari + " hari lagi berbelanja dengan diskon besar sebelum Tahun Baru!";
+		
+      function bergerak(){
+        str = str.substring(1, str.length) + str.substring(0,1);
+        document.title=str;
+        window.status=str;
+        setTimeout(bergerak, 300); // Menetapkan pewaktu
+      }
+    </script>
+  </head>
+  <body onload = "bergerak()">
+    <b>
+    <font color="green" size="4">
+    Amati title bar dan status bar!!
+    <br />
+    <image src="new_year.jpg">
+    </font>
+</body>
+</html>

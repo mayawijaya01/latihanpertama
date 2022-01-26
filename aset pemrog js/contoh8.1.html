@@ -1,0 +1,23 @@
+<html>
+<head><title>Objek Array</title>
+  <h2>Sebuah Array yang memuat buku-buku</h2>
+  <script type="text/javascript">
+    var buku = new Array(6); // Menciptakan sebuah objek Array
+    buku[0] = "War and Peace"; // Menugaskan nilai kepada tiap elemen
+    buku[1] = "Huckleberry Finn";
+    buku[2] = "The Return of the Native";
+    buku[3] = "A Christmas Carol";
+    buku[4] = "The Yearling";
+    buku[5] = "Exodus";
+  </script>
+</head>
+  <body bgcolor="lavender">
+    <big>
+    <script type="text/javascript">
+      for(var i in buku){
+        document.write("buku[" + i + "] "+ buku[i] + "<br />");
+      }
+    </script>
+    </big>
+  </body>
+</html>

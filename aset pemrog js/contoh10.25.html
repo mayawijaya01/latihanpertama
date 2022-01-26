@@ -1,0 +1,74 @@
+<html>
+  <head><title>Kotak-Periksa</title>
+    <script type="text/javascript">
+      function periksa(f){
+        var str="";
+        for (var i = 0; i < f.topping.length;i++){
+          if(f.topping[i].checked){
+            str += f.topping[i].value + "\n";
+          }
+        }
+        f.pesanan.value=str; // Menempatkan nilai str ke area teks
+      }
+      function OK(formKu){
+        var hasil= confirm("Apakah Anda jadi memesan? ");
+        if(hasil == true){
+          document.formKu.submit();
+        }
+        else { return false;}
+      }
+    </script>
+  </head>
+  <body bgColor="#CCFF33">
+    <font face="verdana">
+    <table border="2">
+      <tr><td><b>Kotak-Periksa</b></td></tr>
+    </table>
+    <strong>
+    <form name="kotak_periksa"
+          method="post"
+          action="http://localhost/pizza.php">
+      Pilih topping untuk pizaa:<p></p>
+      <input type="checkbox"
+             name="topping"
+             value="tomat" />Tomat
+      <br />
+      <input type="checkbox"
+             name="topping"
+             value="salami" />Salami
+      <br />
+      <input type=checkbox
+             name="topping"
+             value="pineapple" />Pineapple
+      <br />
+      <input type=checkbox
+             name="topping"
+             value="Canadian bacon" />Canadian bacon
+      <br />
+      <input type=checkbox
+             name="topping"
+             value="anchovies" />Anchovies
+      <br />
+      <input type=checkbox
+             name="topping"
+             value="extra cheese" />Extra Cheese
+      <br />
+      <p><small>
+      Topping Pizza
+      <br />
+      <textarea name="pesanan" rows=6 cols=35
+                onFocus="JavaScript:periksa(this.form);">
+      Klik di sini untuk memesan!!
+      </textarea>
+      <p></p>
+      Panggil pizza man untuk memesan!
+      <br />
+      <input type=image src="pizzaguy.jpg"
+             onClick="JavaScript:return OK(this.form);" />
+      <br />
+      <input type=reset value="Bersihkan form" />
+      </small>
+    </form>
+    </strong></font>
+  </body>
+</html>

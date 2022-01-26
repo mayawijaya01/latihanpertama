@@ -1,0 +1,43 @@
+#menuDropDwon ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    background-color: blue;
+}
+
+#menuDropDwon > ul > li {
+    float: left;
+    position: relative;
+    height: 20px;
+}
+
+#menuDropDwon a {
+    font-family: Arial, helvetica, sans-serif;
+    color: white;
+    height: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+}
+
+.utama ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+.utama :hover ul {
+    display: block;
+}
+
+.utama li {
+    background: url("bg3.png") repeat-y;
+    border-bottom: 1px solid #ad3514;
+}
+
+.utama li:hover {
+    background: none;
+    display: block;
+}

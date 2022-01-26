@@ -1,0 +1,34 @@
+<html>
+  <head><title>Atribut name dan id</title></head>
+  <body>
+    <big>
+    <form name="form1" id="form1"
+          method="GET" action="http://localhost/warna.php">
+      Pilih warna: <br />
+      <input type ="radio" name="warna" id="tombolradio1"
+             value="hijau"/>
+      <label for="tombolradio1">Hijau</label>
+      <br />
+      <input type ="radio" name="warna" id="tombolradio2"
+             value="biru"/>
+      <label for="tombolradio2">Biru</label>
+      <br />
+      <input type ="radio" name="warna" id="tombolradio3"
+             value="kuning"/>
+      <label for="tombolradio3">Kuning</label>
+      <br />
+      <br />
+      <input type="submit" value="Kirim ke Server" />
+    </form>
+    <script type="text/javascript">
+      var rb1=document.getElementById("tombolradio1");
+      var rb2=document.getElementById("tombolradio2");
+      var rb3=document.getElementById("tombolradio3");
+      document.write("Menggunakan atribut id:<br />");
+      document.write(rb1.value+"<br />");
+      document.write(rb2.value+"<br />");
+      document.write(rb3.value+"<br />");
+    </script>
+    </big>
+  </body>
+</html>

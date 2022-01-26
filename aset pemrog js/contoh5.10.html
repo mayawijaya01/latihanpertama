@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Label</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      loopAtas: for ( var baris = 0; baris < 10; baris++){
+      for ( var kol=0; kol <= baris; kol++){
+        document.write("baris "+ baris +"|kolom " + kol, "<br />");
+        if(kol==3){
+          document.write("Keluar dari loop luar pada kolom " + kol +"<br />");
+          break loopAtas;
+        }
+      }
+      document.write("************<br />");
+    } // akhir dari blok loop luar
+    </script>
+  </body>
+</html>

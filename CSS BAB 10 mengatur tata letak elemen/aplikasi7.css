@@ -1,0 +1,47 @@
+body{
+    background-color: seagreen;
+}
+
+.logo{
+    display: block;
+}
+
+.semboyan{
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+}
+
+.judul{
+    height: 80px;
+}
+
+.judul ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.judul li{
+    display: inline;
+}
+
+.menuutama{
+    position: absolute;
+    top: 82px;
+    right: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 150px;
+    background-color: skyblue;
+    color: white;
+}
+
+.informasi{
+    margin-left: 10px;
+    margin-right: 170px;
+    margin-top: 0;
+    padding: 5px;
+    background-color: darkgoldenrod;
+}

@@ -1,0 +1,14 @@
+<html>
+  <head><title>Memaksa Frame</title>
+    <script type = "text/javascript">
+      if (window != top) { // true jika window bukan jendela teratas pada hierarki
+        top.location.href = location.href;
+        // Menempatkan jendela ini di atas
+      }
+    </script>
+  <body bgcolor="lightblue">
+    <h1>
+    Halaman penting yang sedang didiskusikan.
+    </h1>
+  </body>
+</html>

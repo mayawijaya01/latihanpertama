@@ -1,0 +1,82 @@
+img{
+    border: none;
+}
+
+#menuTab ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+#menuTab li{
+    float: left;
+    padding-left: 30px;
+    margin-right: 1px;
+    height: 30px;
+    background: url("tabkiri.png") no-repeat top left;
+}
+
+#menuTab li:first-child{
+    margin-left: 20px;
+}
+
+#menuTab li a{
+    font: bold 1.1em Arial, helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 21px;
+    padding: 9px 30px 0px 0px;
+    background-image: url("tabkanan.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#menuTab li a:hover{
+    color: white;
+}
+
+.info{
+    position: absolute;
+    left: 0;
+    height: 300px;
+    width: 97%;
+    display: none;
+    font: 0.8em Helvetica, sans-serif;
+    border: 1x solid gray;
+    margin-top: -1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: gray;
+    color: black;
+}
+
+#deskripsi{
+    display: block;
+}
+
+#menuTab li a:focus #deskripsi{
+    color: black;
+    display: block;
+}
+
+#menuTab li a:focus #foto{
+    color: black;
+    display: block;
+}
+
+#menuTab li a:focus #eksternal{
+    color: black;
+    display: block;
+}
+
+.judul{
+    display: block;
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: bold;
+}
+

@@ -1,0 +1,22 @@
+table{
+    border: solid 2px navy;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kelabu{
+    border: solid 2px navy;
+    background-color: violet;
+    color: aliceblue;
+}
+
+.rataKanan{
+    text-align: right;
+}
+
+#tombolSimpan{
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}

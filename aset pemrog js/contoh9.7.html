@@ -1,0 +1,22 @@
+<html>
+  <head><title>Membuka Jendela Baru dengan Parameter-Parameter
+  dan Menutupnya</title>
+    <script type="text/javascript">
+      function jendelaBaru(){
+        winObj=window.open("http://localhost/winter.jpg", "winter","width=1150,height=350,resizable=yes, scrollbars=yes,location=yes");
+          winObj.focus();
+          //winObj.blur();
+      }
+      function tutupJendela(){
+        winObj.close();
+      }
+    </script>
+  </head>
+  <body bgColor="lightblue">
+    <h2>Musim Dingin di Jepang</h2>
+    <h3>Klik di sini untuk melihat jendela musim dingin<br/>
+    <a href="JavaScript:jendelaBaru()">Musim Dingin</a>
+    <p>Ketika Anda siap untuk menutup jendela, klik di sini<br/>
+    <a href="JavaScript:tutupJendela()">Tutup jendela</a></h3>
+  </body>
+</html>

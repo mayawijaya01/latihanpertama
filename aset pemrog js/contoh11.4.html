@@ -1,0 +1,45 @@
+<html>
+  <head><title>Citra-Citra HTML</title>
+    <script type="text/javascript">
+      var citraKu=new Array("baby1.jpg", "baby2.jpg",
+                             "baby3.jpg", "baby4.jpg");
+      nil_indeks=0;
+      function citra_brktnya(){
+        nil_indeks++;
+        if (nil_indeks < citraKu.length){
+          document.images["gbrbayi"].src = citraKu[nil_indeks];
+          // dapat dituliskan juga sebagai document.babypic.src atau
+          // document.images[0].src
+        }
+        else{
+          nil_indeks=0;
+          document.images["gbrbayi"].src = citraKu[nil_indeks];
+        }
+      }
+      function citra_sblmnya(){
+        nil_indeks--;
+        if (nil_indeks >= 0){
+          document.images["gbrbayi"].src = citraKu[nil_indeks];
+        }
+        else{
+          nil_indeks=citraKu.length - 1;
+          document.images["gbrbayi"].src = citraKu[nil_indeks];
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+    <h2>Galeri Bayi</h2>
+    <img name="gbrbayi" id="gbrbayi" src="baby1.jpg"
+         width="500" height="440" >
+    <br />
+    <a href="JavaScript:citra_brktnya()">
+      Lihat citra berikutnya<br />
+    </a>
+    <a href="JavaScript:citra_sblmnya()">
+      Lihat citra sebelumnya<br />
+    </a>
+    </div>
+  </body>
+</html>

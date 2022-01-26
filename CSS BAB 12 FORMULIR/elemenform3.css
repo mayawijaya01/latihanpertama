@@ -1,0 +1,15 @@
+form{
+    border: groove blue;
+    background-color: seagreen;
+    font-family: "Tempus Sans ITC";
+    color: violet;
+}
+
+form p{
+    margin-left: 20px;
+}
+
+label{
+    float: left;
+    width: 100px;
+}

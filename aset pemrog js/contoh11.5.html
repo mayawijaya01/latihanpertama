@@ -1,0 +1,14 @@
+<html>
+  <head><title>HTML Mengganti Citra</title></head>
+  <body bgcolor="cornflowerblue">
+    <h2>&nbsp;&nbsp;Ini Bayi Anda?</h2>
+    <img name="tampil" src="baby1.jpg" width="220" height="250" >
+    <script type="text/javascript">
+      var citraKu=new Array("baby1.jpg", "baby2.jpg", "baby3.jpg");
+      var n = prompt("Pilih angka 1 sampai 3","");
+      n--;
+      document.images["tampil"].src = citraKu[n];
+      // document.images[0].src = citraKu[n]
+    </script>
+  </body>
+</html>

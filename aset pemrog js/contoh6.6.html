@@ -1,0 +1,23 @@
+<html>
+  <head><title>Nilai Balik</title>
+    <script type="text/javascript">
+      function kuantitas(km, bensin){
+        return km/bensin; // Nilai balik berupa hasil pembagian
+      }
+    </script>
+  </head>
+  <body bgcolor="lightgreen">
+    <font face="arial" size="+1">
+    <div align="center">
+    <img src="mobil.jpg">
+    <script type="text/javascript">
+      var jarak=eval(prompt("Berapa km yang telah Anda lalui? ", ""));
+      var banyak=eval(prompt("Berapa liter bensin yang Anda habiskan?", ""));
+      var laju = kuantitas(jarak, banyak);
+        // Nilai balik ditugaskan kepada laju
+      alert("Kuantitas: "+ laju +" km per liter.\n");
+    </script>
+    </div>
+    </font>
+  </body>
+</html>
